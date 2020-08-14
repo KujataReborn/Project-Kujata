@@ -4501,16 +4501,17 @@ namespace battleutils
         // Handle Fan Dance
         if (PDefender->StatusEffectContainer->HasStatusEffect(EFFECT_FAN_DANCE))
         {
-
-            int power = PDefender->StatusEffectContainer->GetStatusEffect(EFFECT_FAN_DANCE)->GetPower();
+            uint16 power = PDefender->StatusEffectContainer->GetStatusEffect(EFFECT_FAN_DANCE)->GetPower();
             float resist = 1.0f - (power / 100.0f);
             damage = (int32)(damage * resist);
+
+            // reduce fan dance effectiveness by 10% each hit, to a min of 20%
             if (power > 20)
             {
-                // reduce fan dance effectiveness by 10% each hit, to a min of 20%
                 PDefender->StatusEffectContainer->GetStatusEffect(EFFECT_FAN_DANCE)->SetPower(power - 10);
             }
         }
+
         return damage;
     }
 
