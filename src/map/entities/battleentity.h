@@ -507,6 +507,7 @@ public:
     bool            isAsleep();
     bool            isMounted();
     bool            isSitting();
+    bool            isDualWielding();
 
     JOBTYPE		    GetMJob();					// главная профессия
     JOBTYPE		    GetSJob();					// дополнительная профессия
