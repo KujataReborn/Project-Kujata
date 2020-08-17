@@ -143,6 +143,15 @@ bool CBattleEntity::isSitting()
     return (animation == ANIMATION_HEALING || animation == ANIMATION_SIT || (animation >= ANIMATION_SITCHAIR_0 && animation <= ANIMATION_SITCHAIR_10));
 }
 
+bool CBattleEntity::isDualWielding()
+{
+    if (m_Weapons[SLOT_SUB]->getDmgType() > 0 && m_Weapons[SLOT_SUB]->getDmgType() < 4)
+    {
+        return true;
+    }
+    return false;
+}
+
 /************************************************************************
 *                                                                       *
 *  Пересчитываем максимальные значения hp и mp с учетом модификаторов   *

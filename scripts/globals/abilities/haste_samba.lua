@@ -29,7 +29,7 @@ function onUseAbility(player, target, ability)
     end
 
     local duration = 120 + player:getMod(tpz.mod.SAMBA_DURATION)
-    duration = duration * (100 + player:getMod(tpz.mod.SAMBA_PDURATION)) / 100
+    duration = duration * ((100 + player:getMod(tpz.mod.SAMBA_PDURATION)) / 100)
     player:delStatusEffect(tpz.effect.DRAIN_SAMBA)
     player:delStatusEffect(tpz.effect.ASPIR_SAMBA)
     player:addStatusEffect(tpz.effect.HASTE_SAMBA, 500 + player:getMerit(tpz.merit.HASTE_SAMBA_EFFECT), 0, duration)
