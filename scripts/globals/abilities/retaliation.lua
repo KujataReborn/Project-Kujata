@@ -2,8 +2,8 @@
 -- Ability: Retaliation
 -- Allows you to counterattack but reduces movement speed.
 -- Obtained: Warrior Level 60
--- Recast Time: 3:00
--- Duration: 3:00
+-- Recast Time: 0:03:00
+-- Duration: 0:03:00
 -----------------------------------
 require("scripts/globals/status")
 -----------------------------------
