@@ -1,9 +1,12 @@
 -----------------------------------
+--
 -- tpz.effects.COUNTERSTANCE
--- DEF is removed in core as equip swaps can mess this up otherwise!
+--
 -----------------------------------
 require("scripts/globals/status")
 -----------------------------------
+
+-- DEF is removed in core as equip swaps can mess this up otherwise!
 
 function onEffectGain(target, effect)
     target:addMod(tpz.mod.COUNTER, effect:getPower())
