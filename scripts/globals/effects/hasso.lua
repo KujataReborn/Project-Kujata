@@ -1,9 +1,11 @@
 -----------------------------------
--- Hasso
--- Straight +10% haste +10 Acc and scaling (lv) STR
--- also -50% FC
+--
+-- tpz.effect.HASSO
+--
 -----------------------------------
 require("scripts/globals/status")
+-----------------------------------
+
 function onEffectGain(target, effect)
     target:addMod(tpz.mod.STR, effect:getPower())
     target:addMod(tpz.mod.HASTE_ABILITY, 1000)
