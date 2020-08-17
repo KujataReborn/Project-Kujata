@@ -362,6 +362,17 @@ bool CAttack::CheckAnticipated()
         if (pastAnticipations == 0)
         {
             m_victim->StatusEffectContainer->DelStatusEffect(EFFECT_THIRD_EYE);
+
+            // Augmented Third Eye gives a chance to counter out of Seigan
+            if (tpzrand::GetRandomNumber(100) < m_victim->getMod(Mod::THIRD_EYE_COUNTER_RATE))
+            {
+                if (m_victim->PAI->IsEngaged())
+                {
+                    m_isCountered = true;
+                    m_isCritical = (tpzrand::GetRandomNumber(100) < battleutils::GetCritHitRate(m_victim, m_attacker, false));
+                }
+            }
+
             m_anticipated = true;
             return true;
         }
@@ -379,19 +390,21 @@ bool CAttack::CheckAnticipated()
             //increment power and don't remove
             effect->SetPower(effect->GetPower() + 1);
 
-            //chance to counter - 15% base
-            if (tpzrand::GetRandomNumber(100) < 15 + m_victim->getMod(Mod::THIRD_EYE_COUNTER_RATE))
+            // 15% base chance to counter
+            // Augments Third Eye gives another chance to counter, roughly giving 25% total based mixed distribution with Saotome Haidate
+            if (tpzrand::GetRandomNumber(100) < 15 || tpzrand::GetRandomNumber(100) < m_victim->getMod(Mod::THIRD_EYE_COUNTER_RATE))
             {
-
                 if (m_victim->PAI->IsEngaged())
                 {
                     m_isCountered = true;
                     m_isCritical = (tpzrand::GetRandomNumber(100) < battleutils::GetCritHitRate(m_victim, m_attacker, false));
                 }
             }
+
             m_anticipated = true;
             return true;
         }
+
         m_victim->StatusEffectContainer->DelStatusEffect(EFFECT_THIRD_EYE);
         return false;
     }
