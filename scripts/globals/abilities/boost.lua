@@ -17,14 +17,16 @@ function onUseAbility(player, target, ability)
         player:delStatusEffect(tpz.effect.WARCRY)
     end
 
-    local power = 12.5 + (0.10 * player:getMod(tpz.mod.BOOST_EFFECT))
+    local power = 12.5 + (player:getMod(tpz.mod.BOOST_EFFECT) / 10)
 
     if player:hasStatusEffect(tpz.effect.BOOST) then
         local effect = player:getStatusEffect(tpz.effect.BOOST)
 
         effect:setPower(effect:getPower() + power)
+        effect:setTier(effect:getTier() + 1)
+
         player:addMod(tpz.mod.ATTP, power)
     else
-        player:addStatusEffect(tpz.effect.BOOST, power, 1, 180)
+        player:addStatusEffect(tpz.effect.BOOST, power, 1, 180, 0, 0, 1)
     end
 end
