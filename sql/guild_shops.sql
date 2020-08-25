@@ -37,99 +37,229 @@ CREATE TABLE `guild_shops` (
 --
 -- ORDER BY:  `guildid`,`itemid`
 --
--- Old commment:
--- To cope with the current 30 item limit, I have added in every single item entry according to Blue Gartyr Wiki
--- I then chose the 30 most important items I could think of for each vendor, and commented out the rest for now.
--- I did my best to put all the daily restocks on 1 vendor, and the non-restocks on the other.
--- This should leave ~60 items for each guild, for now. I think this will be enough to make most happy.
--- When the cap is lifted, all you will have to do is remove the comments and make the (S) vendors the same ID and it will display 100% of the item lists
 
--- The above 30 item limit no longer exists..
+-- ------------------------------------------------------------------------------------------------
+-- Woodworking Guild (9)
+-- ------------------------------------------------------------------------------------------------
 
--- Chaupire (Northern San d'Oria) Woodworking Guild (S)
-INSERT INTO `guild_shops` VALUES (5132,3,295500,295500,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,22,282,691,20,0,20);
-INSERT INTO `guild_shops` VALUES (5132,23,829,2035,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,24,70200,408096,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,26,31500,31500,20,0,6);
-INSERT INTO `guild_shops` VALUES (5132,92,738,2322,20,0,10);
-INSERT INTO `guild_shops` VALUES (5132,97,5508,13512,20,0,12);
-INSERT INTO `guild_shops` VALUES (5132,102,291,713,25,0,25);
--- INSERT INTO `guild_shops` VALUES (5132,688,15,30,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,689,27,59,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,690,1723,10295,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,691,45,192,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,693,640,3928,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,694,2119,4182,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,695,120,184,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,696,330,686,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,697,528,930,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,698,60,182,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,699,4740,24016,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,700,9075,19844,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,701,6615,37044,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,702,9600,23040,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,704,96,230,375,100,150);
--- INSERT INTO `guild_shops` VALUES (5132,705,3,18,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,706,27,151,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,707,1723,4136,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,708,45,276,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,710,2119,4521,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,711,1015,3982,100,0,100);
--- INSERT INTO `guild_shops` VALUES (5132,712,120,256,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,713,330,836,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,714,607,2559,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,715,72,403,255,48,100);
--- INSERT INTO `guild_shops` VALUES (5132,716,4740,23257,165,33,65);
--- INSERT INTO `guild_shops` VALUES (5132,719,23552,25216,165,33,65);
-INSERT INTO `guild_shops` VALUES (5132,12289,88,232,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,12290,847,1173,20,0,10);
-INSERT INTO `guild_shops` VALUES (5132,12984,176,280,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,12985,1625,1625,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,12986,6885,17625,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,12987,38707,38707,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,16832,194,201,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,16833,809,4294,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,16834,6448,25376,20,0,10);
-INSERT INTO `guild_shops` VALUES (5132,16835,27165,34750,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,16845,31314,34445,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,17024,48,141,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17025,1165,5707,20,0,10);
-INSERT INTO `guild_shops` VALUES (5132,17027,7525,21003,20,0,5);
-INSERT INTO `guild_shops` VALUES (5132,17030,14766,41876,20,0,3);
-INSERT INTO `guild_shops` VALUES (5132,17049,34,102,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17050,247,703,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17051,1049,3038,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17052,3827,19420,20,0,10);
-INSERT INTO `guild_shops` VALUES (5132,17088,46,126,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17089,424,977,20,0,15);
-INSERT INTO `guild_shops` VALUES (5132,17090,3371,7103,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17095,281,1260,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17096,3400,23349,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17097,22617,35932,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17098,29390,72633,20,0,3);
--- INSERT INTO `guild_shops` VALUES (5132,17152,41,202,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17153,1039,1055,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17154,5306,15602,20,0,10);
--- INSERT INTO `guild_shops` VALUES (5132,17154,21000,128100,20,0,5);
--- INSERT INTO `guild_shops` VALUES (5132,17156,82971,82971,20,0,3);
--- INSERT INTO `guild_shops` VALUES (5132,17160,870,969,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17162,14614,42969,20,0,10);
--- INSERT INTO `guild_shops` VALUES (5132,17163,28944,82080,20,0,5);
--- INSERT INTO `guild_shops` VALUES (5132,17164,57405,166219,20,0,3);
--- INSERT INTO `guild_shops` VALUES (5132,17216,187,354,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17218,10311,67100,20,0,10);
--- INSERT INTO `guild_shops` VALUES (5132,17280,1172,5250,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17318,6,13,8910,0,3564);
--- INSERT INTO `guild_shops` VALUES (5132,17320,10,14,5940,0,2376);
--- INSERT INTO `guild_shops` VALUES (5132,17321,28,34,2970,0,1188);
--- INSERT INTO `guild_shops` VALUES (5132,17345,69,163,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17347,1028,5060,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17348,11256,32592,20,0,10);
--- INSERT INTO `guild_shops` VALUES (5132,17353,37,94,20,0,15);
--- INSERT INTO `guild_shops` VALUES (5132,17354,4300,12200,20,0,10);
--- INSERT INTO `guild_shops` VALUES (5132,17355,13400,38800,20,0,5);
--- INSERT INTO `guild_shops` VALUES (5132,17424,7717,20685,20,0,3);
+-- Northern San d'Oria - Cauzeriste & Chaupire (1)
+INSERT INTO `guild_shops` VALUES (901,   688,    15,    30,  96, 12, 48); -- arrowwood log
+INSERT INTO `guild_shops` VALUES (901,   689,    25,    40,  96, 12, 48); -- lauan log
+INSERT INTO `guild_shops` VALUES (901,   690,  5000, 11000,  96, 12, 48); -- elm log
+INSERT INTO `guild_shops` VALUES (901,   691,    45,   100,  96, 12, 48); -- maple log
+INSERT INTO `guild_shops` VALUES (901,   693,   600,  1000,  96, 12, 48); -- walnut log
+INSERT INTO `guild_shops` VALUES (901,   694,  2500,  3500,  60,  6, 30); -- chestnut log
+INSERT INTO `guild_shops` VALUES (901,   695,   100,   130,  96, 12, 48); -- willow log
+INSERT INTO `guild_shops` VALUES (901,   696,   300,   450,  96, 12, 48); -- yew log
+INSERT INTO `guild_shops` VALUES (901,   697,   500,   600,  96, 12, 48); -- holly log
+INSERT INTO `guild_shops` VALUES (901,   698,    70,   120,  96, 12, 48); -- ash log
+INSERT INTO `guild_shops` VALUES (901,   699,  6000, 12000,  60,  6, 30); -- oak log
+INSERT INTO `guild_shops` VALUES (901,   700,  7000,  9500,  36,  4, 18); -- mahogany log
+INSERT INTO `guild_shops` VALUES (901,   701,  6000,  9000,  36,  4, 18); -- rosewood log
+INSERT INTO `guild_shops` VALUES (901,   702,  9500, 12000,  18,  2,  9); -- ebony log
+INSERT INTO `guild_shops` VALUES (901,   704,    90,   120, 192, 24, 96); -- bamboo stick
+INSERT INTO `guild_shops` VALUES (901,   705,    20,    35,  96, 12, 48); -- piece of arrowwood lumber
+INSERT INTO `guild_shops` VALUES (901,   706,    40,    60,  96, 12, 48); -- piece of lauan lumber
+INSERT INTO `guild_shops` VALUES (901,   707,  5000, 11000,  96, 12, 48); -- piece of elm lumber
+INSERT INTO `guild_shops` VALUES (901,   708,    60,   120,  96, 12, 48); -- piece of maple lumber
+INSERT INTO `guild_shops` VALUES (901,   710,  2500,  3500,  60,  6, 30); -- piece of chestnut lumber
+INSERT INTO `guild_shops` VALUES (901,   711,   650,  1050,  96, 12, 48); -- piece of walnut lumber
+INSERT INTO `guild_shops` VALUES (901,   712,   120,   150,  96, 12, 48); -- piece of willow lumber
+INSERT INTO `guild_shops` VALUES (901,   713,   325,   475,  96, 12, 48); -- piece of yew lumber
+INSERT INTO `guild_shops` VALUES (901,   714,   525,   625,  96, 12, 48); -- piece of holly lumber
+INSERT INTO `guild_shops` VALUES (901,   715,    90,   135,  96, 12, 48); -- piece of ash lumber
+INSERT INTO `guild_shops` VALUES (901,   716,  6000, 12000,  60,  6, 30); -- piece of oak lumber
+INSERT INTO `guild_shops` VALUES (901,   717,  7000,  9500,  36,  4, 18); -- piece of mahogany lumber
+INSERT INTO `guild_shops` VALUES (901,   718,  6000,  9000,  36,  4, 18); -- piece of rosewood lumber
+INSERT INTO `guild_shops` VALUES (901,   719,  9500, 12000,  18,  2,  9); -- piece of ebony lumber
+INSERT INTO `guild_shops` VALUES (901,   721,   300,   500,  96, 12, 48); -- piece of rattan lumber
+INSERT INTO `guild_shops` VALUES (901, 17318,     9,    12, 990, 99, 99); -- wooden arrow
+INSERT INTO `guild_shops` VALUES (901, 17320,    16,    19, 990, 99, 99); -- iron arrow
+INSERT INTO `guild_shops` VALUES (901, 17321,    20,    26, 990, 99, 99); -- silver arrow
+
+INSERT INTO `guild_shops` VALUES (901,     2,  3000,  4000,   3,  0,  0); -- simple bed
+INSERT INTO `guild_shops` VALUES (901,     3, 40000, 60000,   3,  0,  0); -- oak bed
+INSERT INTO `guild_shops` VALUES (901,    21,  6000,  7500,   3,  0,  0); -- desk
+INSERT INTO `guild_shops` VALUES (901,    22,   250,   400,   3,  0,  0); -- workbench
+INSERT INTO `guild_shops` VALUES (901,    23,   500,   750,   3,  0,  0); -- maple table
+INSERT INTO `guild_shops` VALUES (901,    24, 28000, 36000,   3,  0,  0); -- oak table
+INSERT INTO `guild_shops` VALUES (901,    26,  4000,  6000,   3,  0,  0); -- tarutaru desk
+INSERT INTO `guild_shops` VALUES (901,    92,  5500,  8000,   3,  0,  0); -- tarutaru stool
+INSERT INTO `guild_shops` VALUES (901,    97,  2000,  3500,   3,  0,  0); -- bookholder
+INSERT INTO `guild_shops` VALUES (901,   102,   350,   500,   5,  0,  0); -- flower stand
+INSERT INTO `guild_shops` VALUES (901,   720, 30000, 50000,  12,  0,  0); -- piece of ancient lumber
+-- (727) dogwood log
+-- (728) piece of dogwood lumber 
+-- (729) bloodwood log
+-- (730) piece of bloodwood lumber
+INSERT INTO `guild_shops` VALUES (901, 12289,   400,   800,  10,  0,  0); -- lauan shield
+INSERT INTO `guild_shops` VALUES (901, 12290,   900,  1400,  10,  0,  0); -- maple shield
+INSERT INTO `guild_shops` VALUES (901, 12291, 12500, 15000,  10,  0,  0); -- elm shield
+INSERT INTO `guild_shops` VALUES (901, 12292, 17000, 25000,  10,  0,  0); -- mahogany shield
+INSERT INTO `guild_shops` VALUES (901, 12293, 18000, 25000,  10,  0,  0); -- oak shield
+INSERT INTO `guild_shops` VALUES (901, 12984,   300,   500,   5,  0,  0); -- ash clogs
+INSERT INTO `guild_shops` VALUES (901, 12985,  2000,  3000,   5,  0,  0); -- holly clogs
+INSERT INTO `guild_shops` VALUES (901, 12986,  3500,  5000,   5,  0,  0); -- chestnut sabots
+INSERT INTO `guild_shops` VALUES (901, 12987, 13000, 18000,   5,  0,  0); -- ebony sabots
+INSERT INTO `guild_shops` VALUES (901, 16832,   350,   550,  10,  0,  0); -- harpoon
+INSERT INTO `guild_shops` VALUES (901, 16833,   600,   900,  10,  0,  0); -- bronze spear
+INSERT INTO `guild_shops` VALUES (901, 16834,  1300,  1800,  10,  0,  0); -- brass spear
+INSERT INTO `guild_shops` VALUES (901, 16835,  4000,  5500,  10,  0,  0); -- spear
+INSERT INTO `guild_shops` VALUES (901, 16836,  6500,  9000,  10,  0,  0); -- halberd
+INSERT INTO `guild_shops` VALUES (901, 16845, 11500, 14000,  10,  0,  0); -- lance
+INSERT INTO `guild_shops` VALUES (901, 17024,   250,   350,  10,  0,  0); -- ash club
+INSERT INTO `guild_shops` VALUES (901, 17025,  3000,  4000,  10,  0,  0); -- chestnut club
+INSERT INTO `guild_shops` VALUES (901, 17027,  7000, 10000,  10,  0,  0); -- oak cudgel
+INSERT INTO `guild_shops` VALUES (901, 17030,  9000, 13000,  10,  0,  0); -- great club
+INSERT INTO `guild_shops` VALUES (901, 17049,    50,    60,  10,  0,  0); -- maple wand
+INSERT INTO `guild_shops` VALUES (901, 17050,   300,   550,  10,  0,  0); -- willow wand
+INSERT INTO `guild_shops` VALUES (901, 17051,  1000,  1500,  10,  0,  0); -- yew wand
+INSERT INTO `guild_shops` VALUES (901, 17052,  3000,  4000,  10,  0,  0); -- chestnut wand
+INSERT INTO `guild_shops` VALUES (901, 17053,  8000, 11500,  10,  0,  0); -- rose wand
+INSERT INTO `guild_shops` VALUES (901, 17088,   350,   500,  10,  0,  0); -- ash staff
+INSERT INTO `guild_shops` VALUES (901, 17089,   600,   900,  10,  0,  0); -- holly staff
+INSERT INTO `guild_shops` VALUES (901, 17090,  7000,  9000,  10,  0,  0); -- elm staff
+INSERT INTO `guild_shops` VALUES (901, 17091,  8500, 12000,  10,  0,  0); -- oak staff
+INSERT INTO `guild_shops` VALUES (901, 17095,   400,   600,  10,  0,  0); -- ash pole
+INSERT INTO `guild_shops` VALUES (901, 17096,  1200,  1800,  10,  0,  0); -- holly pole
+INSERT INTO `guild_shops` VALUES (901, 17097, 12000, 18000,  10,  0,  0); -- elm pole
+INSERT INTO `guild_shops` VALUES (901, 17098, 14000, 20000,  10,  0,  0); -- oak pole
+INSERT INTO `guild_shops` VALUES (901, 17152,   300,   600,  10,  0,  0); -- shortbow
+INSERT INTO `guild_shops` VALUES (901, 17153,  2000,  3000,  10,  0,  0); -- self bow
+INSERT INTO `guild_shops` VALUES (901, 17154,  3000,  6500,  10,  0,  0); -- wrapped bow
+INSERT INTO `guild_shops` VALUES (901, 17155,  4000,  5500,  10,  0,  0); -- composite bow
+INSERT INTO `guild_shops` VALUES (901, 17156, 10000, 14000,  10,  0,  0); -- kaman
+INSERT INTO `guild_shops` VALUES (901, 17160,  7000,  9000,  10,  0,  0); -- longbow
+INSERT INTO `guild_shops` VALUES (901, 17161, 15000, 25000,  10,  0,  0); -- power bow
+INSERT INTO `guild_shops` VALUES (901, 17162,  9000, 14000,  10,  0,  0); -- great bow
+INSERT INTO `guild_shops` VALUES (901, 17163, 11500, 17000,  10,  0,  0); -- battle bow
+INSERT INTO `guild_shops` VALUES (901, 17164, 22000, 32000,  10,  0,  0); -- war bow
+INSERT INTO `guild_shops` VALUES (901, 17216,   800,  1000,  10,  0,  0); -- light crossbow
+INSERT INTO `guild_shops` VALUES (901, 17217,  7000, 10500,  10,  0,  0); -- crossbow
+INSERT INTO `guild_shops` VALUES (901, 17218, 15000, 21000,  10,  0,  0); -- zamburak
+INSERT INTO `guild_shops` VALUES (901, 17280,   700,  1000,  10,  0,  0); -- boomerang
+INSERT INTO `guild_shops` VALUES (901, 17347,  1800,  3000,  10,  0,  0); -- piccolo
+INSERT INTO `guild_shops` VALUES (901, 17348,  7000, 11000,  10,  0,  0); -- traversiere
+INSERT INTO `guild_shops` VALUES (901, 17353,    50,    75,  10,  0,  0); -- maple harp
+INSERT INTO `guild_shops` VALUES (901, 17354,  6000,  8750,  10,  0,  0); -- harp
+INSERT INTO `guild_shops` VALUES (901, 17355, 15000, 21000,  10,  0,  0); -- rose harp
+INSERT INTO `guild_shops` VALUES (901, 17345,    75,   100,  10,  0,  0); -- flute
+INSERT INTO `guild_shops` VALUES (901, 17424,  2500,  4000,  10,  0,  0); -- spiked club
+INSERT INTO `guild_shops` VALUES (901, 17523,  4500,  6000,  10,  0,  0); -- quarterstaff
+
+-- Carpenter's Landing - Beugungel (2)
+INSERT INTO `guild_shops` VALUES (902,   688,    15,    30,  96, 12, 48); -- arrowwood log
+INSERT INTO `guild_shops` VALUES (902,   693,   600,  1000,  96, 12, 48); -- walnut log
+INSERT INTO `guild_shops` VALUES (902,   695,   100,   130,  96, 12, 48); -- willow log
+INSERT INTO `guild_shops` VALUES (902,   696,   300,   450,  96, 12, 48); -- yew log
+INSERT INTO `guild_shops` VALUES (902,   698,    70,   120,  96, 12, 48); -- ash log
+INSERT INTO `guild_shops` VALUES (902,  1021,   300,   500,  96, 12, 48); -- hatchet
+INSERT INTO `guild_shops` VALUES (902,  1657,    75,   100,  96, 12, 48); -- bundling twine
+
+-- Al Zahbi - Dehbi Moshal (3)
+INSERT INTO `guild_shops` VALUES (903,   688,    15,    30,  96, 12, 48); -- arrowwood log
+INSERT INTO `guild_shops` VALUES (903,   689,    25,    40,  96, 12, 48); -- lauan log
+INSERT INTO `guild_shops` VALUES (903,   690,  5000, 11000,  96, 12, 48); -- elm log
+INSERT INTO `guild_shops` VALUES (903,   691,    45,   100,  96, 12, 48); -- maple log
+INSERT INTO `guild_shops` VALUES (903,   693,   600,  1000,  96, 12, 48); -- walnut log
+INSERT INTO `guild_shops` VALUES (903,   694,  2500,  3500,  60,  6, 30); -- chestnut log
+INSERT INTO `guild_shops` VALUES (903,   695,   100,   130,  96, 12, 48); -- willow log
+INSERT INTO `guild_shops` VALUES (903,   696,   300,   450,  96, 12, 48); -- yew log
+INSERT INTO `guild_shops` VALUES (903,   697,   500,   600,  96, 12, 48); -- holly log
+INSERT INTO `guild_shops` VALUES (903,   698,    70,   120,  96, 12, 48); -- ash log
+INSERT INTO `guild_shops` VALUES (903,   699,  6000, 12000,  60,  6, 30); -- oak log
+INSERT INTO `guild_shops` VALUES (903,   700,  7000,  9500,  36,  4, 18); -- mahogany log
+INSERT INTO `guild_shops` VALUES (903,   701,  6000,  9000,  36,  4, 18); -- rosewood log
+INSERT INTO `guild_shops` VALUES (903,   702,  9500, 12000,  18,  2,  9); -- ebony log
+INSERT INTO `guild_shops` VALUES (903,   704,    90,   120, 192, 24, 96); -- bamboo stick
+INSERT INTO `guild_shops` VALUES (903,   705,    20,    35,  96, 12, 48); -- piece of arrowwood lumber
+INSERT INTO `guild_shops` VALUES (903,   706,    40,    60,  96, 12, 48); -- piece of lauan lumber
+INSERT INTO `guild_shops` VALUES (903,   707,  5000, 11000,  96, 12, 48); -- piece of elm lumber
+INSERT INTO `guild_shops` VALUES (903,   708,    60,   120,  96, 12, 48); -- piece of maple lumber
+INSERT INTO `guild_shops` VALUES (903,   710,  2500,  3500,  60,  6, 30); -- piece of chestnut lumber
+INSERT INTO `guild_shops` VALUES (903,   711,   650,  1050,  96, 12, 48); -- piece of walnut lumber
+INSERT INTO `guild_shops` VALUES (903,   712,   120,   150,  96, 12, 48); -- piece of willow lumber
+INSERT INTO `guild_shops` VALUES (903,   713,   325,   475,  96, 12, 48); -- piece of yew lumber
+INSERT INTO `guild_shops` VALUES (903,   714,   525,   625,  96, 12, 48); -- piece of holly lumber
+INSERT INTO `guild_shops` VALUES (903,   715,    90,   135,  96, 12, 48); -- piece of ash lumber
+INSERT INTO `guild_shops` VALUES (903,   716,  6000, 12000,  60,  6, 30); -- piece of oak lumber
+INSERT INTO `guild_shops` VALUES (903,   717,  7000,  9500,  36,  4, 18); -- piece of mahogany lumber
+INSERT INTO `guild_shops` VALUES (903,   718,  6000,  9000,  36,  4, 18); -- piece of rosewood lumber
+INSERT INTO `guild_shops` VALUES (903,   719,  9500, 12000,  18,  2,  9); -- piece of ebony lumber
+INSERT INTO `guild_shops` VALUES (903,   721,   300,   500,  96, 12, 48); -- piece of rattan lumber
+INSERT INTO `guild_shops` VALUES (903, 17320,    16,    19, 990, 99, 99); -- iron arrow
+INSERT INTO `guild_shops` VALUES (903, 17321,    20,    26, 990, 99, 99); -- silver arrow
+
+INSERT INTO `guild_shops` VALUES (903,     2,  3000,  4000,   3,  0,  0); -- simple bed
+INSERT INTO `guild_shops` VALUES (903,     3, 40000, 60000,   3,  0,  0); -- oak bed
+INSERT INTO `guild_shops` VALUES (903,    21,  6000,  7500,   3,  0,  0); -- desk
+INSERT INTO `guild_shops` VALUES (903,    22,   250,   400,   3,  0,  0); -- workbench
+INSERT INTO `guild_shops` VALUES (903,    23,   500,   750,   3,  0,  0); -- maple table
+INSERT INTO `guild_shops` VALUES (903,    24, 28000, 36000,   3,  0,  0); -- oak table
+INSERT INTO `guild_shops` VALUES (903,    26,  4000,  6000,   3,  0,  0); -- tarutaru desk
+INSERT INTO `guild_shops` VALUES (903,    92,  5500,  8000,   3,  0,  0); -- tarutaru stool
+INSERT INTO `guild_shops` VALUES (903,    97,  2000,  3500,   3,  0,  0); -- bookholder
+INSERT INTO `guild_shops` VALUES (903,   102,   350,   500,   5,  0,  0); -- flower stand
+INSERT INTO `guild_shops` VALUES (903,   720, 30000, 50000,  12,  0,  0); -- piece of ancient lumber
+-- (727) dogwood log
+-- (728) piece of dogwood lumber 
+-- (729) bloodwood log
+-- (730) piece of bloodwood lumber
+INSERT INTO `guild_shops` VALUES (903, 12289,   400,   800,  10,  0,  0); -- lauan shield
+INSERT INTO `guild_shops` VALUES (903, 12290,   900,  1400,  10,  0,  0); -- maple shield
+INSERT INTO `guild_shops` VALUES (903, 12291, 12500, 15000,  10,  0,  0); -- elm shield
+INSERT INTO `guild_shops` VALUES (903, 12292, 17000, 25000,  10,  0,  0); -- mahogany shield
+INSERT INTO `guild_shops` VALUES (903, 12293, 18000, 25000,  10,  0,  0); -- oak shield
+INSERT INTO `guild_shops` VALUES (903, 12984,   300,   500,   5,  0,  0); -- ash clogs
+INSERT INTO `guild_shops` VALUES (903, 12985,  2000,  3000,   5,  0,  0); -- holly clogs
+INSERT INTO `guild_shops` VALUES (903, 12986,  3500,  5000,   5,  0,  0); -- chestnut sabots
+INSERT INTO `guild_shops` VALUES (903, 12987, 13000, 18000,   5,  0,  0); -- ebony sabots
+INSERT INTO `guild_shops` VALUES (903, 16832,   350,   550,  10,  0,  0); -- harpoon
+INSERT INTO `guild_shops` VALUES (903, 16833,   600,   900,  10,  0,  0); -- bronze spear
+INSERT INTO `guild_shops` VALUES (903, 16834,  1300,  1800,  10,  0,  0); -- brass spear
+INSERT INTO `guild_shops` VALUES (903, 16835,  4000,  5500,  10,  0,  0); -- spear
+INSERT INTO `guild_shops` VALUES (903, 16836,  6500,  9000,  10,  0,  0); -- halberd
+INSERT INTO `guild_shops` VALUES (903, 16845, 11500, 14000,  10,  0,  0); -- lance
+INSERT INTO `guild_shops` VALUES (903, 17024,   250,   350,  10,  0,  0); -- ash club
+INSERT INTO `guild_shops` VALUES (903, 17025,  3000,  4000,  10,  0,  0); -- chestnut club
+INSERT INTO `guild_shops` VALUES (903, 17027,  7000, 10000,  10,  0,  0); -- oak cudgel
+INSERT INTO `guild_shops` VALUES (903, 17030,  9000, 13000,  10,  0,  0); -- great club
+INSERT INTO `guild_shops` VALUES (903, 17049,    50,    60,  10,  0,  0); -- maple wand
+INSERT INTO `guild_shops` VALUES (903, 17050,   300,   550,  10,  0,  0); -- willow wand
+INSERT INTO `guild_shops` VALUES (903, 17051,  1000,  1500,  10,  0,  0); -- yew wand
+INSERT INTO `guild_shops` VALUES (903, 17052,  3000,  4000,  10,  0,  0); -- chestnut wand
+INSERT INTO `guild_shops` VALUES (903, 17053,  8000, 11500,  10,  0,  0); -- rose wand
+INSERT INTO `guild_shops` VALUES (903, 17088,   350,   500,  10,  0,  0); -- ash staff
+INSERT INTO `guild_shops` VALUES (903, 17089,   600,   900,  10,  0,  0); -- holly staff
+INSERT INTO `guild_shops` VALUES (903, 17090,  7000,  9000,  10,  0,  0); -- elm staff
+INSERT INTO `guild_shops` VALUES (903, 17091,  8500, 12000,  10,  0,  0); -- oak staff
+INSERT INTO `guild_shops` VALUES (903, 17095,   400,   600,  10,  0,  0); -- ash pole
+INSERT INTO `guild_shops` VALUES (903, 17096,  1200,  1800,  10,  0,  0); -- holly pole
+INSERT INTO `guild_shops` VALUES (903, 17097, 12000, 18000,  10,  0,  0); -- elm pole
+INSERT INTO `guild_shops` VALUES (903, 17098, 14000, 20000,  10,  0,  0); -- oak pole
+INSERT INTO `guild_shops` VALUES (903, 17152,   300,   600,  10,  0,  0); -- shortbow
+INSERT INTO `guild_shops` VALUES (903, 17153,  2000,  3000,  10,  0,  0); -- self bow
+INSERT INTO `guild_shops` VALUES (903, 17154,  3000,  6500,  10,  0,  0); -- wrapped bow
+INSERT INTO `guild_shops` VALUES (903, 17155,  4000,  5500,  10,  0,  0); -- composite bow
+INSERT INTO `guild_shops` VALUES (903, 17156, 10000, 14000,  10,  0,  0); -- kaman
+INSERT INTO `guild_shops` VALUES (903, 17160,  7000,  9000,  10,  0,  0); -- longbow
+INSERT INTO `guild_shops` VALUES (903, 17161, 15000, 25000,  10,  0,  0); -- power bow
+INSERT INTO `guild_shops` VALUES (903, 17162,  9000, 14000,  10,  0,  0); -- great bow
+INSERT INTO `guild_shops` VALUES (903, 17163, 11500, 17000,  10,  0,  0); -- battle bow
+INSERT INTO `guild_shops` VALUES (903, 17164, 22000, 32000,  10,  0,  0); -- war bow
+INSERT INTO `guild_shops` VALUES (903, 17216,   800,  1000,  10,  0,  0); -- light crossbow
+INSERT INTO `guild_shops` VALUES (903, 17217,  7000, 10500,  10,  0,  0); -- crossbow
+INSERT INTO `guild_shops` VALUES (903, 17218, 15000, 21000,  10,  0,  0); -- zamburak
+INSERT INTO `guild_shops` VALUES (903, 17280,   700,  1000,  10,  0,  0); -- boomerang
+INSERT INTO `guild_shops` VALUES (903, 17318,     9,    12, 990, 99, 99); -- wooden arrow
+INSERT INTO `guild_shops` VALUES (903, 17345,    75,   100,  10,  0,  0); -- flute
+INSERT INTO `guild_shops` VALUES (903, 17347,  1800,  3000,  10,  0,  0); -- piccolo
+INSERT INTO `guild_shops` VALUES (903, 17348,  7000, 11000,  10,  0,  0); -- traversiere
+INSERT INTO `guild_shops` VALUES (903, 17353,    50,    75,  10,  0,  0); -- maple harp
+INSERT INTO `guild_shops` VALUES (903, 17354,  6000,  8750,  10,  0,  0); -- harp
+INSERT INTO `guild_shops` VALUES (903, 17355, 15000, 21000,  10,  0,  0); -- rose harp
+INSERT INTO `guild_shops` VALUES (903, 17424,  2500,  4000,  10,  0,  0); -- spiked club
+INSERT INTO `guild_shops` VALUES (903, 17523,  4500,  6000,  10,  0,  0); -- quarterstaff
 
 -- Shih Tayuun (Bonecraft Guild) Windurst Woods (S)
 INSERT INTO `guild_shops` VALUES (514,864,72,288,255,48,100);
@@ -947,15 +1077,6 @@ INSERT INTO `guild_shops` VALUES (5332,17045,11970,29366,20,0,10);
 INSERT INTO `guild_shops` VALUES (5332,17298,598,620,2970,0,1188);
 INSERT INTO `guild_shops` VALUES (5332,17336,4,11,2970,0,1188);
 
--- Beugungel (Carpenter's Landing) Woodworking Guild
-INSERT INTO `guild_shops` VALUES (534,688,12,30,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,693,640,1622,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,695,120,184,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,696,330,686,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,698,93,182,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,1021,312,500,255,48,100);
-INSERT INTO `guild_shops` VALUES (534,1657,75,255,255,48,100);
-
 -- Akamafula (Lower Jeuno) Tenshodo Merchent
 INSERT INTO `guild_shops` VALUES (60417,16896,517,592,20,10,20);
 INSERT INTO `guild_shops` VALUES (60417,16900,1404,1608,20,7,15);
@@ -1196,38 +1317,6 @@ INSERT INTO `guild_shops` VALUES (60427,660,69,294,165,33,65);
 INSERT INTO `guild_shops` VALUES (60427,662,4050,9898,165,33,65);
 INSERT INTO `guild_shops` VALUES (60427,2143,320,320,255,48,100);
 INSERT INTO `guild_shops` VALUES (60427,2144,75,75,255,48,100);
-
--- Dehbi Moshal (Woodworking Guild) Al Zahbi
-INSERT INTO `guild_shops` VALUES (60428,23,829,2035,20,0,15);
-INSERT INTO `guild_shops` VALUES (60428,688,15,30,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,689,27,59,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,690,1401,10295,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,691,45,192,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,693,640,2459,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,694,2119,4182,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,695,120,184,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,696,330,686,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,697,528,930,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,698,72,86,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,699,4740,29072,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,700,9075,10103,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,701,6615,18345,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,702,9600,45568,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,704,108,248,375,100,150);
-INSERT INTO `guild_shops` VALUES (60428,705,7,18,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,706,27,97,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,707,1723,1838,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,708,45,276,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,710,2119,2543,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,712,120,256,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,713,330,426,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,714,607,2559,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,715,72,215,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,716,4740,26544,165,33,65);
-INSERT INTO `guild_shops` VALUES (60428,721,704,2465,255,48,100);
-INSERT INTO `guild_shops` VALUES (60428,17318,6,13,8910,0,3564);
-INSERT INTO `guild_shops` VALUES (60428,17320,21,26,5940,0,2376);
-INSERT INTO `guild_shops` VALUES (60428,17321,48,60,2970,0,1188);
 
 -- Bornahn (Goldsmithing Guild) Al Zahbi
 INSERT INTO `guild_shops` VALUES (60429,640,9,36,255,48,100);
