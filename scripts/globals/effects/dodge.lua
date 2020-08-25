@@ -1,6 +1,6 @@
 -----------------------------------
 --
---     tpz.effect.DODGE
+-- tpz.effect.DODGE
 --
 -----------------------------------
 require("scripts/globals/status")

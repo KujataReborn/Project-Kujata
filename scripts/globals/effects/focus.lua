@@ -1,6 +1,6 @@
 -----------------------------------
 --
---     tpz.effect.FOCUS
+-- tpz.effect.FOCUS
 --
 -----------------------------------
 require("scripts/globals/status")

@@ -1961,53 +1961,81 @@ namespace battleutils
             else
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
-                auto sub_weapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
 
-                if (sub_weapon && sub_weapon->getDmgType() > 0 &&
-                    sub_weapon->getDmgType() < 4 &&
-                    weapon->getSkillType() != SKILL_HAND_TO_HAND)
+                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                    !weapon->isHandToHand())
                 {
-                    delay = delay / 2;
+                    delay /= 2;
                 }
 
                 float ratio = 1.0f;
 
-                if (weapon->getSkillType() == SKILL_HAND_TO_HAND)
-                    ratio = 2.0f;
+                if (weapon->isHandToHand())
+                {
+                    if (!PAttacker->StatusEffectContainer->HasStatusEffect(EFFECT_FOOTWORK))
+                    {
+                        ratio = 2.0f;
+                    }
+                    else if (physicalAttackType != PHYSICAL_ATTACK_TYPE::ZANSHIN)
+                    {
+                        delay = 8000;
+                    }
+                }
 
                 baseTp = CalculateBaseTP((int16)(delay * 60.0f / 1000.0f / ratio));
             }
 
-
             if (giveTPtoAttacker)
             {
-                if (PAttacker->objtype == TYPE_PC && physicalAttackType == PHYSICAL_ATTACK_TYPE::ZANSHIN)
+                float storeTp = 1.0f + ((float)(PAttacker->getMod(Mod::STORETP)) / 100.0f);
+
+                if (PAttacker->objtype == TYPE_PC)
                 {
-                    baseTp += ((CCharEntity*)PAttacker)->PMeritPoints->GetMeritValue(MERIT_IKISHOTEN, (CCharEntity*)PAttacker);
+                    storeTp += ((CCharEntity*)PAttacker)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PAttacker) / 100.0f;
+
+                    if (physicalAttackType == PHYSICAL_ATTACK_TYPE::ZANSHIN)
+                    {
+                        baseTp += ((CCharEntity*)PAttacker)->PMeritPoints->GetMeritValue(MERIT_IKISHOTEN, (CCharEntity*)PAttacker);
+                    }
                 }
 
-                PAttacker->addTP((int16)(tpMultiplier * (baseTp * (1.0f + 0.01f * (float)((PAttacker->getMod(Mod::STORETP) + getStoreTPbonusFromMerit(PAttacker)))))));
+                PAttacker->addTP((uint16)(baseTp * storeTp * tpMultiplier));
             }
 
             if (giveTPtoVictim)
             {
-                //account for attacker's subtle blow which reduces the baseTP gain for the defender
-                float sBlowMult = ((100.0f - std::clamp((float)PAttacker->getMod(Mod::SUBTLE_BLOW), 0.0f, 50.0f)) / 100.0f);
+                float sBlowMult = 1.0f - (std::clamp((float)PAttacker->getMod(Mod::SUBTLE_BLOW), 0.0f, 50.0f) / 100.0f);
+                float storeTp = 1.0f + ((float)(PDefender->getMod(Mod::STORETP)) / 100.0f);
 
-                //mobs hit get basetp+30 whereas pcs hit get basetp/3
                 if (PDefender->objtype == TYPE_PC)
                 {
-                    PDefender->addTP((int16)(tpMultiplier * ((baseTp / 3) * sBlowMult * (1.0f + 0.01f * (float)((PDefender->getMod(Mod::STORETP) + getStoreTPbonusFromMerit(PAttacker))))))); //yup store tp counts on hits taken too!
+                    baseTp /= 3;
+
+                    storeTp += ((CCharEntity*)PDefender)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PDefender) / 100.0f;
                 }
                 else
-                    PDefender->addTP((uint16)(tpMultiplier * ((baseTp + 30) * sBlowMult * (1.0f + 0.01f * (float)PDefender->getMod(Mod::STORETP))))); //subtle blow also reduces the "+30" on mob tp gain
+                {
+                    if (weapon->isHandToHand() && PAttacker->StatusEffectContainer->HasStatusEffect(EFFECT_FOOTWORK))
+                    {
+                        baseTp /= 2;
+                    }
+
+                    baseTp += 30;
+                }
+
+                PDefender->addTP((uint16)(baseTp * sBlowMult * storeTp * tpMultiplier));
             }
         }
         else if (PDefender->objtype == TYPE_MOB)
+        {
             ((CMobEntity*)PDefender)->PEnmityContainer->UpdateEnmityFromDamage(PAttacker, 0);
+        }
 
         if (PAttacker->objtype == TYPE_PC && !isRanged)
+        {
             PAttacker->StatusEffectContainer->DelStatusEffectsByFlag(EFFECTFLAG_ATTACK);
+        }
 
         return damage;
     }
@@ -2091,19 +2119,26 @@ namespace battleutils
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
 
-                auto sub_weapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
-
-                if (sub_weapon && sub_weapon->getDmgType() > 0 &&
-                    sub_weapon->getDmgType() < 4 &&
-                    weapon->getSkillType() != SKILL_HAND_TO_HAND)
+                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                    !weapon->isHandToHand())
                 {
                     delay /= 2;
                 }
 
                 float ratio = 1.0f;
 
-                if (weapon && weapon->getSkillType() == SKILL_HAND_TO_HAND)
-                    ratio = 2.0f;
+                if (weapon->isHandToHand())
+                {
+                    if (!PAttacker->StatusEffectContainer->HasStatusEffect(EFFECT_FOOTWORK))
+                    {
+                        ratio = 2.0f;
+                    }
+                    else
+                    {
+                        delay = 8000;
+                    }
+                }
 
                 baseTp = (int16)(CalculateBaseTP((delay * 60) / 1000) / ratio);
             }

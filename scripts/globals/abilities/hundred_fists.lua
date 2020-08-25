@@ -5,7 +5,6 @@
 -- Recast Time: 1:00:00
 -- Duration: 0:00:45
 -----------------------------------
-require("scripts/globals/settings")
 require("scripts/globals/status")
 -----------------------------------
 
