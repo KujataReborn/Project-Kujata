@@ -106,6 +106,83 @@ INSERT INTO `guild_shops` VALUES (201, 17610, 3000,  4500,  10,  0,  0); -- bone
 INSERT INTO `guild_shops` VALUES (201, 17612, 8000, 12000,  10,  0,  0); -- beetle knife
 
 -- ------------------------------------------------------------------------------------------------
+-- Leatherworking Guild (7)
+-- ------------------------------------------------------------------------------------------------
+
+-- Southern San d'Oria - Kueh Igunahmori & Cletae (1)
+INSERT INTO `guild_shops` VALUES (701,   505,   80,   120, 152, 36, 40); -- sheepskin
+INSERT INTO `guild_shops` VALUES (701,   695,  100,   130,  96, 12, 48); -- willow log
+INSERT INTO `guild_shops` VALUES (701,   853, 2500,  4000, 100, 28, 25); -- raptor skin
+INSERT INTO `guild_shops` VALUES (701,   854, 3500,  5200, 100, 28, 25); -- cockatrice skin
+INSERT INTO `guild_shops` VALUES (701,   856,   30,    60, 152, 36, 40); -- rabbit hide
+INSERT INTO `guild_shops` VALUES (701,   858,  400,   600, 100, 28, 25); -- wolf hide
+INSERT INTO `guild_shops` VALUES (701,   859, 1400,  2100,  72, 16, 19); -- ram skin
+INSERT INTO `guild_shops` VALUES (701,   861, 2500,  3500,  55, 11, 13); -- black tiger hide
+INSERT INTO `guild_shops` VALUES (701,   863, 3500,  5500,  55, 11, 13); -- coeurl hide
+INSERT INTO `guild_shops` VALUES (701,  2129,   75,    75, 152, 36, 40); -- tanning vat
+INSERT INTO `guild_shops` VALUES (701,  4509,   10,    15, 152, 36, 40); -- distilled water
+
+-- INSERT INTO `guild_shops` VALUES (701,506,4000,6000,100,0,25); -- square of coeurl leather
+-- INSERT INTO `guild_shops` VALUES (701,848,900,1300,72,0,19); -- square of dhalmel leather
+-- INSERT INTO `guild_shops` VALUES (701,850,350,500,72,0,19); -- square of sheep leather
+-- INSERT INTO `guild_shops` VALUES (701,851,1800,2300,72,0,19); -- square of ram leather
+-- INSERT INTO `guild_shops` VALUES (701,855,3000,4500,30,0,8); -- square of black tiger leather
+INSERT INTO `guild_shops` VALUES (701,   857,  600,   900, 152,  0,  0); -- dhalmel hide
+INSERT INTO `guild_shops` VALUES (701,   852,  700,  1000, 152,  0,  0); -- lizard skin
+INSERT INTO `guild_shops` VALUES (701,   917,  450,   700, 152,  0,  0); -- sheet of parchment
+INSERT INTO `guild_shops` VALUES (701,  1116, 6000,  9000,  30,  0,  0); -- manticore hide
+-- INSERT INTO `guild_shops` VALUES (701,1117,6500,9200,30,0,8); -- square of manticore leather
+INSERT INTO `guild_shops` VALUES (701, 12294, 4500,  7000,  10,  0,  0); -- leather shield
+INSERT INTO `guild_shops` VALUES (701, 12440,  500,   750,   5,  0,  0); -- leather bandana
+INSERT INTO `guild_shops` VALUES (701, 12441, 2000,  3000,   5,  0,  0); -- lizard helm
+INSERT INTO `guild_shops` VALUES (701, 12442, 5000,  6500,   5,  0,  0); -- studded bandana
+INSERT INTO `guild_shops` VALUES (701, 12443, 5750,  7000,   5,  0,  0); -- cuir bandana
+INSERT INTO `guild_shops` VALUES (701, 12444, 6500,  9500,   5,  0,  0); -- raptor helm
+INSERT INTO `guild_shops` VALUES (701, 12568, 2200,  3500,   5,  0,  0); -- leather vest
+INSERT INTO `guild_shops` VALUES (701, 12569, 3000,  4500,   5,  0,  0); -- lizard jerkin
+INSERT INTO `guild_shops` VALUES (701, 12570, 6000,  9000,   5,  0,  0); -- studded vest
+INSERT INTO `guild_shops` VALUES (701, 12571, 7000, 10000,   5,  0,  0); -- cuir bouilli
+INSERT INTO `guild_shops` VALUES (701, 12572, 8000, 12000,   5,  0,  0); -- raptor jerkin
+INSERT INTO `guild_shops` VALUES (701, 12696,  800,  1200,   5,  0,  0); -- leather gloves
+INSERT INTO `guild_shops` VALUES (701, 12697, 2000,  3000,   5,  0,  0); -- lizard gloves
+INSERT INTO `guild_shops` VALUES (701, 12698, 5000,  6500,   5,  0,  0); -- studded gloves
+INSERT INTO `guild_shops` VALUES (701, 12699, 5750,  7000,   5,  0,  0); -- cuir gloves
+INSERT INTO `guild_shops` VALUES (701, 12700, 6500,  9500,   5,  0,  0); -- raptor gloves
+INSERT INTO `guild_shops` VALUES (701, 12824, 1200,  1800,   5,  0,  0); -- leather trousers
+INSERT INTO `guild_shops` VALUES (701, 12825, 2000,  3000,   5,  0,  0); -- lizard trousers
+INSERT INTO `guild_shops` VALUES (701, 12826, 5000,  6500,   5,  0,  0); -- studded trousers
+INSERT INTO `guild_shops` VALUES (701, 12827, 5750,  7000,   5,  0,  0); -- cuir trousers
+INSERT INTO `guild_shops` VALUES (701, 12828, 6500,  9500,   5,  0,  0); -- raptor trousers
+INSERT INTO `guild_shops` VALUES (701, 12952, 1200,  1800,   5,  0,  0); -- leather highboots
+INSERT INTO `guild_shops` VALUES (701, 12953, 2000,  3000,   5,  0,  0); -- lizard ledelsens
+INSERT INTO `guild_shops` VALUES (701, 12954, 5000,  6500,   5,  0,  0); -- studded boots
+INSERT INTO `guild_shops` VALUES (701, 12955, 5750,  7000,   5,  0,  0); -- cuir highboots
+INSERT INTO `guild_shops` VALUES (701, 12956, 6500,  9500,   5,  0,  0); -- raptor ledelsens
+INSERT INTO `guild_shops` VALUES (701, 12992,  700,  1000,   5,  0,  0); -- solea
+INSERT INTO `guild_shops` VALUES (701, 12993, 1500,  2700,   5,  0,  0); -- sandals
+INSERT INTO `guild_shops` VALUES (701, 12994, 3000,  4500,   5,  0,  0); -- shoes
+INSERT INTO `guild_shops` VALUES (701, 12995, 5000,  7500,   5,  0,  0); -- moccasins
+INSERT INTO `guild_shops` VALUES (701, 13081, 2000,  3000,   5,  0,  0); -- leather gorget
+INSERT INTO `guild_shops` VALUES (701, 13089, 3000,  4500,   5,  0,  0); -- wolf gorget
+INSERT INTO `guild_shops` VALUES (701, 13192, 1000,  1500,   5,  0,  0); -- leather belt
+INSERT INTO `guild_shops` VALUES (701, 13193, 2500,  3500,   5,  0,  0); -- lizard belt
+INSERT INTO `guild_shops` VALUES (701, 13194, 6500, 10000,   5,  0,  0); -- warriors belt
+INSERT INTO `guild_shops` VALUES (701, 13195, 4500,  6500,   5,  0,  0); -- magic belt
+INSERT INTO `guild_shops` VALUES (701, 13200, 4000,  6000,   5,  0,  0); -- waistbelt
+INSERT INTO `guild_shops` VALUES (701, 13203, 6500, 10000,   5,  0,  0); -- barbarians belt
+-- INSERT INTO `guild_shops` VALUES (701,13469,1000,1500,5,0,0); -- leather ring
+INSERT INTO `guild_shops` VALUES (701, 13570, 3000,  4500,   5,  0,  0); -- ram mantle
+INSERT INTO `guild_shops` VALUES (701, 13571, 2500,  3700,   5,  0,  0); -- wolf mantle
+INSERT INTO `guild_shops` VALUES (701, 13588, 2000,  3000,   5,  0,  0); -- dhalmel mantle
+INSERT INTO `guild_shops` VALUES (701, 13592, 1500,  2200,   5,  0,  0); -- lizard mantle
+INSERT INTO `guild_shops` VALUES (701, 13593, 5000,  7500,   5,  0,  0); -- raptor mantle
+INSERT INTO `guild_shops` VALUES (701, 13594,  450,   700,   5,  0,  0); -- rabbit mantle
+-- INSERT INTO `guild_shops` VALUES (701,13703,44100,108192,5,0,0); -- brigandine armor
+INSERT INTO `guild_shops` VALUES (701, 16385,  600,   900,   5,  0,  0); -- cesti
+INSERT INTO `guild_shops` VALUES (701, 16386, 1300,  1900,   5,  0,  0); -- lizard cesti
+INSERT INTO `guild_shops` VALUES (701, 16388, 4000,  6000,   5,  0,  0); -- himantes
+
+-- ------------------------------------------------------------------------------------------------
 -- Woodworking Guild (9)
 -- ------------------------------------------------------------------------------------------------
 
@@ -822,78 +899,6 @@ INSERT INTO `guild_shops` VALUES (528,775,1400,4200,165,33,65);
 INSERT INTO `guild_shops` VALUES (528,776,1400,4200,165,33,65);
 INSERT INTO `guild_shops` VALUES (528,2143,320,320,255,48,100);
 INSERT INTO `guild_shops` VALUES (528,2144,75,75,255,48,100);
-
--- Kueh Igunahmori (Leathercraft Guild) Southern San d'Oria (S)
-INSERT INTO `guild_shops` VALUES (529,505,62,349,255,48,100);
-INSERT INTO `guild_shops` VALUES (529,506,9600,11333,165,0,65);
-INSERT INTO `guild_shops` VALUES (529,695,120,184,255,48,100);
-INSERT INTO `guild_shops` VALUES (529,832,1000,2800,80,20,40);
-INSERT INTO `guild_shops` VALUES (529,848,2912,4636,80,0,32);
-INSERT INTO `guild_shops` VALUES (529,850,390,390,80,0,32);
-INSERT INTO `guild_shops` VALUES (529,851,2718,7139,80,0,32);
-INSERT INTO `guild_shops` VALUES (529,852,630,640,255,0,100);
-INSERT INTO `guild_shops` VALUES (529,853,2400,6000,165,36,65);
-INSERT INTO `guild_shops` VALUES (529,854,2650,3304,165,33,65);
-INSERT INTO `guild_shops` VALUES (529,855,9077,10874,30,0,12);
-INSERT INTO `guild_shops` VALUES (529,856,45,130,255,48,100);
-INSERT INTO `guild_shops` VALUES (529,857,1290,1990,255,0,100);
-INSERT INTO `guild_shops` VALUES (529,858,483,1161,165,33,65);
-INSERT INTO `guild_shops` VALUES (529,859,937,2650,80,33,32);
-INSERT INTO `guild_shops` VALUES (529,861,1312,3124,55,11,22);
-INSERT INTO `guild_shops` VALUES (529,863,4000,8000,55,11,22);
-INSERT INTO `guild_shops` VALUES (529,917,481,963,255,0,100);
-INSERT INTO `guild_shops` VALUES (529,1116,5000,8600,30,6,12);
-INSERT INTO `guild_shops` VALUES (529,1117,8385,15000,30,0,12);
-INSERT INTO `guild_shops` VALUES (529,2129,75,75,255,48,100);
-INSERT INTO `guild_shops` VALUES (529,4509,9,23,375,75,150);
-INSERT INTO `guild_shops` VALUES (529,12294,13500,14000,10,0,10);
-INSERT INTO `guild_shops` VALUES (529,12440,330,880,20,0,20);
-INSERT INTO `guild_shops` VALUES (529,12441,3318,8407,20,0,15);
-INSERT INTO `guild_shops` VALUES (529,12442,8000,9000,20,0,10);
-INSERT INTO `guild_shops` VALUES (529,12443,8500,9300,20,0,20);
-INSERT INTO `guild_shops` VALUES (529,12444,9200,10000,20,0,5);
-INSERT INTO `guild_shops` VALUES (529,12568,987,1323,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,12569,5145,16189,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,12570,44232,44916,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,12571,32340,84946,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12572,44460,116781,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12696,318,1612,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,12697,2700,7092,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,12698,11610,53625,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,12699,17052,44789,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12700,29700,150480,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12724,589,1055,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,12825,5819,10714,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,12826,32002,36232,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,12827,25200,66192,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12828,42900,112684,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12952,504,1639,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,12953,2578,16777,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,12955,15624,41039,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12956,58027,72811,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,12992,453,1815,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,12993,3366,8841,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,12994,11481,28273,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,12995,48960,76296,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,13081,211,1003,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,13089,6384,15662,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,13192,837,1224,20,10,20);
--- INSERT INTO `guild_shops` VALUES (529,13193,4590,12420,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,13194,16896,20803,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,13195,2277,5980,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13200,13860,35112,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13203,2277,5980,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13469,937,2087,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,13570,10800,25488,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13571,6426,31530,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13588,2484,14440,20,0,10);
--- INSERT INTO `guild_shops` VALUES (529,13592,2065,9804,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,13593,24000,62080,20,0,5);
--- INSERT INTO `guild_shops` VALUES (529,13594,132,316,20,10,20);
--- INSERT INTO `guild_shops` VALUES (529,13703,44100,108192,20,0,3);
--- INSERT INTO `guild_shops` VALUES (529,16385,279,283,20,0,20);
--- INSERT INTO `guild_shops` VALUES (529,16386,945,5997,20,0,15);
--- INSERT INTO `guild_shops` VALUES (529,16388,11970,27700,20,0,5);
 
 -- Kopopo (Windurst Waters) Cooking Guild (S)
 INSERT INTO `guild_shops` VALUES (530,610,45,144,255,48,100);
