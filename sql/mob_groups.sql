@@ -2812,7 +2812,7 @@ INSERT INTO `mob_groups` VALUES (5,4260,61,'Vozold_Jagil',0,128,147,0,0,71,78,0)
 INSERT INTO `mob_groups` VALUES (6,1534,61,'Giant_Orobon',0,128,969,0,0,78,83,0);
 INSERT INTO `mob_groups` VALUES (7,4371,61,'Wootzshell',330,0,2668,0,0,70,71,0);
 INSERT INTO `mob_groups` VALUES (8,3616,61,'Sicklemoon_Jagil',330,0,463,0,0,73,76,0);
-INSERT INTO `mob_groups` VALUES (9,5330,61,'Sulphuric_Jagil',330,0,0,0,0,87,88,0);
+INSERT INTO `mob_groups` VALUES (9,5330,61,'Sulphuric_Jagil',330,0,0,0,0,73,76,0); -- (87-88)
 INSERT INTO `mob_groups` VALUES (10,3130,61,'Phasma',330,1,1996,0,0,73,76,0);
 INSERT INTO `mob_groups` VALUES (11,1160,61,'Earth_Elemental',330,4,733,0,0,74,76,0);
 INSERT INTO `mob_groups` VALUES (12,271,61,'Assassin_Fly',330,0,0,0,0,71,76,0);
@@ -2836,9 +2836,9 @@ INSERT INTO `mob_groups` VALUES (29,1170,61,'Ebony_Pudding',330,0,740,0,0,79,80,
 INSERT INTO `mob_groups` VALUES (30,1952,61,'Hilltroll_Ranger',330,0,1309,0,0,79,83,0);
 INSERT INTO `mob_groups` VALUES (31,4031,61,'Troll_Speculator',0,128,0,0,0,80,80,0);
 INSERT INTO `mob_groups` VALUES (32,2253,61,'King_Apkallu',330,0,1447,0,0,78,80,0);
-INSERT INTO `mob_groups` VALUES (33,5331,61,'Orichalcumshell',330,0,2668,0,0,88,89,0);
+INSERT INTO `mob_groups` VALUES (33,5331,61,'Orichalcumshell',330,0,2668,0,0,70,71,0); -- (88-89)
 INSERT INTO `mob_groups` VALUES (34,5843,61,'Ignamoth',0,32,3026,0,0,84,84,0);
-INSERT INTO `mob_groups` VALUES (35,5332,61,'Scoriaceous_Eruca',330,0,419,0,0,88,89,0);
+INSERT INTO `mob_groups` VALUES (35,5332,61,'Scoriaceous_Eruca',330,0,419,0,0,79,83,0); -- (88-89)
 INSERT INTO `mob_groups` VALUES (36,894,61,'Dahak',1800,0,0,0,0,81,82,0);
 INSERT INTO `mob_groups` VALUES (37,680,61,'Cerberus',172800,0,446,50000,0,85,85,0);
 INSERT INTO `mob_groups` VALUES (38,916,61,'Dark_Rider',0,128,0,0,0,95,95,0);
