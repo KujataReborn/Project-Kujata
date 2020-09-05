@@ -12142,10 +12142,10 @@ INSERT INTO `mob_groups` VALUES (12,2835,197,'Nest_Beetle',924,0,1778,0,0,45,47,
 INSERT INTO `mob_groups` VALUES (13,3697,197,'Soldier_Crawler',924,0,256,0,0,47,49,0);
 INSERT INTO `mob_groups` VALUES (14,1990,197,'Hornfly',960,0,1330,0,0,50,53,0);
 INSERT INTO `mob_groups` VALUES (15,1271,197,'Exoray',960,0,800,0,0,51,54,0);
-INSERT INTO `mob_groups` VALUES (16,5839,197,'King_Crawler',330,0,3008,0,0,91,96,0);
-INSERT INTO `mob_groups` VALUES (17,3335,197,'Vespo',330,0,2644,0,0,92,96,0);
-INSERT INTO `mob_groups` VALUES (18,6325,197,'Dancing_Jewel',330,0,1330,0,0,93,96,0);
-INSERT INTO `mob_groups` VALUES (19,6344,197,'Olid_Funguar',330,0,1440,0,0,93,96,0);
+INSERT INTO `mob_groups` VALUES (16,5839,197,'King_Crawler',330,0,3008,0,0,47,49,0); -- (91-96)
+INSERT INTO `mob_groups` VALUES (17,3335,197,'Vespo',330,0,2644,0,0,55,57,0); -- (92-96)
+INSERT INTO `mob_groups` VALUES (18,6325,197,'Dancing_Jewel',330,0,1330,0,0,50,53,0); -- (93-96)
+INSERT INTO `mob_groups` VALUES (19,6344,197,'Olid_Funguar',330,0,1440,0,0,51,54,0); -- (93-96)
 INSERT INTO `mob_groups` VALUES (20,1341,197,'Fire_Elemental',960,4,832,0,0,52,54,0);
 INSERT INTO `mob_groups` VALUES (21,4309,197,'Water_Elemental',960,4,2631,0,0,52,54,0);
 INSERT INTO `mob_groups` VALUES (22,447,197,'Blazer_Beetle',960,0,292,0,0,52,54,0);
