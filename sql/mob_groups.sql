@@ -12096,10 +12096,10 @@ INSERT INTO `mob_groups` VALUES (19,4319,196,'Wendigo',300,0,2639,0,0,26,30,0);
 INSERT INTO `mob_groups` VALUES (20,3435,196,'Sadfly',792,0,2143,0,0,27,30,0);
 INSERT INTO `mob_groups` VALUES (21,2146,196,'Jelly',660,0,15,0,0,27,29,0);
 INSERT INTO `mob_groups` VALUES (22,6572,196,'Wight',792,0,2653,0,0,31,34,0);
-INSERT INTO `mob_groups` VALUES (23,6532,196,'Accursed_Soldier',330,0,1540,0,0,85,89,0);
-INSERT INTO `mob_groups` VALUES (24,6537,196,'Accursed_Sorcerer',330,0,1540,0,0,85,89,0);
-INSERT INTO `mob_groups` VALUES (25,1099,196,'Dragonfly',330,0,0,0,0,85,89,0);
-INSERT INTO `mob_groups` VALUES (26,6416,196,'Rockmill',330,0,0,0,0,85,89,0);
+INSERT INTO `mob_groups` VALUES (23,6532,196,'Accursed_Soldier',330,0,1540,0,0,26,30,0); -- (86-89)
+INSERT INTO `mob_groups` VALUES (24,6537,196,'Accursed_Sorcerer',330,0,1540,0,0,23,26,0); -- (86-89)
+INSERT INTO `mob_groups` VALUES (25,1099,196,'Madfly',330,0,0,0,0,27,30,0); -- (85-88)
+INSERT INTO `mob_groups` VALUES (26,6416,196,'Rockmill',330,0,0,0,0,23,26,0); -- (85-89)
 INSERT INTO `mob_groups` VALUES (27,6528,196,'Mauthe_Doog',792,0,1643,0,0,28,31,0);
 INSERT INTO `mob_groups` VALUES (28,2783,196,'Myconid',792,0,1760,0,0,30,32,0);
 INSERT INTO `mob_groups` VALUES (29,1329,196,'Feu_Follet',792,0,827,0,0,35,38,0);
