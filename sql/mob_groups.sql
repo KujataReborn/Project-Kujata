@@ -10918,8 +10918,8 @@ INSERT INTO `mob_groups` VALUES (14,4309,173,'Water_Elemental',792,4,2629,0,0,32
 INSERT INTO `mob_groups` VALUES (15,639,173,'Cargo_Crab_Colin',0,32,416,0,0,35,37,0);
 INSERT INTO `mob_groups` VALUES (16,2141,173,'Jammer_Leech',792,0,1404,0,0,60,60,0);
 INSERT INTO `mob_groups` VALUES (17,1282,173,'Falcatus_Aranei',0,32,808,0,0,35,36,0);
-INSERT INTO `mob_groups` VALUES (18,4816,173,'Lacerator',330,0,0,0,0,87,91,0);
-INSERT INTO `mob_groups` VALUES (19,6404,173,'Spool_Leech',330,0,343,0,0,87,91,0);
+INSERT INTO `mob_groups` VALUES (18,4816,173,'Lacerator',330,0,0,0,0,29,32,0); -- (87-91)
+INSERT INTO `mob_groups` VALUES (19,6404,173,'Spool_Leech',330,0,343,0,0,28,31,0); -- (87-91)
 INSERT INTO `mob_groups` VALUES (20,485,173,'Bogy',792,0,323,0,0,30,33,0);
 INSERT INTO `mob_groups` VALUES (21,898,173,'Dame_Blanche',0,32,561,0,0,31,36,0);
 INSERT INTO `mob_groups` VALUES (22,1588,173,'Gigas_Stonemason',792,0,997,0,0,35,37,0);
