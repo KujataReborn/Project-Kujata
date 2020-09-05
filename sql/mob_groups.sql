@@ -12022,8 +12022,8 @@ INSERT INTO `mob_groups` VALUES (11,3559,195,'Shade',960,0,2883,0,0,46,48,0);
 INSERT INTO `mob_groups` VALUES (12,5402,195,'Shade',960,0,2883,0,0,46,48,0);
 INSERT INTO `mob_groups` VALUES (13,5401,195,'Shade',960,0,2883,0,5000,46,48,0);
 INSERT INTO `mob_groups` VALUES (14,5400,195,'Shade',960,0,2883,0,0,46,48,0);
-INSERT INTO `mob_groups` VALUES (15,6531,195,'Hellbound_Warrior',330,0,0,0,0,91,95,0);
-INSERT INTO `mob_groups` VALUES (16,6536,195,'Hellbound_Warlock',330,0,0,0,0,91,95,0);
+INSERT INTO `mob_groups` VALUES (15,6531,195,'Hellbound_Warrior',330,0,0,0,0,60,63,0); -- (91-95)
+INSERT INTO `mob_groups` VALUES (16,6536,195,'Hellbound_Warlock',330,0,0,0,0,60,63,0); -- (91-95)
 INSERT INTO `mob_groups` VALUES (17,6511,195,'Revenant',960,0,2094,0,0,44,47,0);
 INSERT INTO `mob_groups` VALUES (18,1926,195,'Hell_Hound',960,0,1297,0,0,46,49,0);
 INSERT INTO `mob_groups` VALUES (19,136,195,'Anemone',960,0,92,0,0,45,46,0);
@@ -12039,7 +12039,7 @@ INSERT INTO `mob_groups` VALUES (28,5407,195,'Ka',960,0,2884,0,0,52,54,0);
 INSERT INTO `mob_groups` VALUES (29,3945,195,'Tomb_Wolf',960,0,2887,0,0,53,55,0);
 INSERT INTO `mob_groups` VALUES (30,876,195,'Cwn_Cyrff',0,32,2886,0,0,68,68,0);
 INSERT INTO `mob_groups` VALUES (31,6512,195,'Utukku',960,0,2529,0,0,55,57,0);
-INSERT INTO `mob_groups` VALUES (32,6171,195,'Nekros_Hound',960,0,1297,0,0,93,95,0);
+INSERT INTO `mob_groups` VALUES (32,6171,195,'Nekros_Hound',960,0,1297,0,0,53,55,0); -- (91-95)
 INSERT INTO `mob_groups` VALUES (33,918,195,'Dark_Stalker',960,0,570,0,0,57,59,0);
 INSERT INTO `mob_groups` VALUES (34,5410,195,'Dark_Stalker',960,0,570,0,5000,57,59,0);
 INSERT INTO `mob_groups` VALUES (35,5412,195,'Dark_Stalker',960,0,570,0,5000,57,59,0);
