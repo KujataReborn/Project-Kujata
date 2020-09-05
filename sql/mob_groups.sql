@@ -10611,13 +10611,13 @@ INSERT INTO `mob_groups` VALUES (16,1537,166,'Giant_Scorpion',792,0,972,0,0,38,4
 INSERT INTO `mob_groups` VALUES (17,374,166,'Bat_Eye',792,0,246,0,0,42,44,0);
 INSERT INTO `mob_groups` VALUES (18,1912,166,'Hecteyes',960,0,1288,0,0,31,34,0);
 INSERT INTO `mob_groups` VALUES (19,4574,166,'Mucoid_Mass',6000,0,3016,0,0,45,48,0);
-INSERT INTO `mob_groups` VALUES (20,1264,166,'Evil_Eye',330,0,0,0,0,87,92,0);
-INSERT INTO `mob_groups` VALUES (21,6459,166,'Bilesucker',330,0,0,0,0,87,92,0);
-INSERT INTO `mob_groups` VALUES (22,1637,166,'Goblin_Bandit',330,0,0,0,0,86,90,0);
-INSERT INTO `mob_groups` VALUES (23,1664,166,'Goblin_Freesword',330,0,0,0,0,88,90,0);
-INSERT INTO `mob_groups` VALUES (24,1637,166,'Goblin_Bandit',330,0,0,0,0,88,90,0);
-INSERT INTO `mob_groups` VALUES (25,1695,166,'Goblin_Patrolman',330,0,0,0,0,88,90,0);
-INSERT INTO `mob_groups` VALUES (26,1721,166,'Goblins_Bats',0,128,0,0,0,83,84,0);
+INSERT INTO `mob_groups` VALUES (20,1264,166,'Hovering_Oculus',330,0,0,0,0,42,44,0); -- (87-92)
+INSERT INTO `mob_groups` VALUES (21,6459,166,'Bilesucker',330,0,0,0,0,25,28,0); -- (87-92)
+INSERT INTO `mob_groups` VALUES (22,1710,166,'Goblin_Hoodoo',330,0,0,0,0,26,30,0); -- (86-90)
+INSERT INTO `mob_groups` VALUES (23,1715,166,'Goblin_Artificer',330,0,0,0,0,26,30,0); -- (86-90)
+INSERT INTO `mob_groups` VALUES (24,1694,166,'Goblin_Chaser',330,0,0,0,0,26,30,0); -- (86-90)
+INSERT INTO `mob_groups` VALUES (25,1665,166,'Goblin_Tanner',330,0,0,0,0,26,30,0); -- (86-90)
+INSERT INTO `mob_groups` VALUES (26,1721,166,'Goblins_Bats',0,128,0,0,0,24,25,0); -- (83-84)
 INSERT INTO `mob_groups` VALUES (27,1267,166,'Evil_Weapon',660,0,799,0,0,35,37,0);
 INSERT INTO `mob_groups` VALUES (28,4041,166,'Tros',0,128,0,0,0,44,44,0);
 INSERT INTO `mob_groups` VALUES (8748,1370,166,'Floating_Eye',960,0,850,0,0,34,36,0);
