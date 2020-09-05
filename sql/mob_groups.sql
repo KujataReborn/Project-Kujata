@@ -11236,11 +11236,11 @@ INSERT INTO `mob_groups` VALUES (15,4309,178,'Water_Elemental',960,0,2629,0,0,73
 INSERT INTO `mob_groups` VALUES (16,71,178,'Air_Elemental',960,0,38,0,0,71,72,0);
 INSERT INTO `mob_groups` VALUES (17,1160,178,'Earth_Elemental',960,0,733,0,0,71,72,0);
 INSERT INTO `mob_groups` VALUES (18,913,178,'Dark_Elemental',960,0,568,0,0,73,74,0);
-INSERT INTO `mob_groups` VALUES (19,323,178,'Baelfyr',330,0,0,0,0,104,106,0);
-INSERT INTO `mob_groups` VALUES (20,1487,178,'Gefyrst',330,0,0,0,0,104,106,0);
-INSERT INTO `mob_groups` VALUES (21,4099,178,'Ungeweder',330,0,0,0,0,104,106,0);
-INSERT INTO `mob_groups` VALUES (22,593,178,'Byrgen',330,0,0,0,999,104,106,0);
-INSERT INTO `mob_groups` VALUES (23,289,178,'Aura_Statue',330,0,3107,0,0,104,106,0);
+INSERT INTO `mob_groups` VALUES (19,323,178,'Baelfyr',330,0,0,0,0,71,74,0); -- (104-106)
+INSERT INTO `mob_groups` VALUES (20,1487,178,'Gefyrst',330,0,0,0,0,71,74,0); -- (104-106)
+INSERT INTO `mob_groups` VALUES (21,4099,178,'Ungeweder',330,0,0,0,0,71,74,0); -- (104-106)
+INSERT INTO `mob_groups` VALUES (22,593,178,'Byrgen',330,0,0,0,999,71,74,0); -- (104-106)
+INSERT INTO `mob_groups` VALUES (23,289,178,'Aura_Statue',330,0,3107,0,0,81,84,0); -- (104-106)
 INSERT INTO `mob_groups` VALUES (24,2971,178,'Olla_Pequena',0,128,0,5000,0,83,83,0);
 INSERT INTO `mob_groups` VALUES (25,2970,178,'Olla_Media',0,128,0,5200,0,84,84,0);
 INSERT INTO `mob_groups` VALUES (26,2969,178,'Olla_Grande',0,128,2823,5300,0,85,85,0);
