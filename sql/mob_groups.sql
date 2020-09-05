@@ -12561,8 +12561,8 @@ INSERT INTO `mob_groups` VALUES (16,1728,212,'Goblins_Leech',0,128,0,0,0,53,55,0
 INSERT INTO `mob_groups` VALUES (17,4390,212,'Wyvernpoacher_Drachlox',0,32,2680,0,0,70,75,0);
 INSERT INTO `mob_groups` VALUES (18,1085,212,'Doom_Soldier',960,0,686,0,0,65,67,0);
 INSERT INTO `mob_groups` VALUES (19,1083,212,'Doom_Mage',960,0,680,0,0,65,67,0);
-INSERT INTO `mob_groups` VALUES (20,4580,212,'Boulder_Eater',330,0,2816,0,0,100,105,0);
-INSERT INTO `mob_groups` VALUES (21,4579,212,'Pygmytoise',330,0,2815,0,0,100,103,0);
+INSERT INTO `mob_groups` VALUES (20,4580,212,'Boulder_Eater',330,0,2816,0,0,65,67,0); -- (100-105)
+INSERT INTO `mob_groups` VALUES (21,4579,212,'Pygmytoise',330,0,2815,0,0,75,77,0); -- (100-103)
 INSERT INTO `mob_groups` VALUES (22,1160,212,'Earth_Elemental',960,4,733,0,0,75,77,0);
 INSERT INTO `mob_groups` VALUES (23,1082,212,'Doom_Guard',960,0,675,0,0,75,77,0);
 INSERT INTO `mob_groups` VALUES (24,1087,212,'Doom_Warlock',960,0,688,0,0,76,78,0);
