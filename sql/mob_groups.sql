@@ -10959,8 +10959,8 @@ INSERT INTO `mob_groups` VALUES (18,3079,174,'Ovinnik',960,0,1969,0,0,77,79,0);
 INSERT INTO `mob_groups` VALUES (19,1801,174,'Greater_Cockatrice',960,0,201,0,0,78,80,0);
 INSERT INTO `mob_groups` VALUES (20,2314,174,'Ladon',960,0,1477,0,0,80,82,0);
 INSERT INTO `mob_groups` VALUES (21,3115,174,'Pelican',0,32,1988,0,0,80,81,0);
-INSERT INTO `mob_groups` VALUES (22,6417,174,'Kuftal_Delver',330,0,1467,0,0,99,102,0);
-INSERT INTO `mob_groups` VALUES (23,3677,174,'Smilodon',330,0,0,0,0,99,103,0);
+INSERT INTO `mob_groups` VALUES (22,6417,174,'Kuftal_Delver',330,0,1467,0,0,66,69,0); -- (99-102)
+INSERT INTO `mob_groups` VALUES (23,3677,174,'Machairodus',330,0,0,0,0,77,79,0); -- (99-103)
 INSERT INTO `mob_groups` VALUES (24,962,174,'Deinonychus',960,0,601,0,0,65,68,0);
 INSERT INTO `mob_groups` VALUES (25,1687,174,'Goblin_Mercenary',960,0,1115,0,0,66,69,0);
 INSERT INTO `mob_groups` VALUES (26,1634,174,'Goblin_Alchemist',960,0,1014,0,0,66,69,0);
