@@ -12615,8 +12615,8 @@ INSERT INTO `mob_groups` VALUES (27,1637,213,'Goblin_Bandit',960,0,1023,0,0,66,6
 INSERT INTO `mob_groups` VALUES (28,1711,213,'Goblin_Shepherd',960,0,1156,0,0,66,69,0);
 INSERT INTO `mob_groups` VALUES (29,1687,213,'Goblin_Mercenary',924,0,1114,0,0,66,69,0);
 INSERT INTO `mob_groups` VALUES (30,4389,213,'Wyvern',960,0,2679,0,0,72,75,0);
-INSERT INTO `mob_groups` VALUES (31,6542,213,'Babaulas',330,0,0,0,0,95,98,0);
-INSERT INTO `mob_groups` VALUES (32,6538,213,'Boribaba',330,0,0,0,0,95,98,0);
+INSERT INTO `mob_groups` VALUES (31,6542,213,'Babaulas',330,0,0,0,0,76,78,0); -- (95-98)
+INSERT INTO `mob_groups` VALUES (32,6538,213,'Boribaba',330,0,0,0,0,76,78,0); -- (95-98)
 INSERT INTO `mob_groups` VALUES (33,4074,213,'Ubume',0,128,0,6000,0,60,65,0);
 INSERT INTO `mob_groups` VALUES (34,2612,213,'Megapod_Megalops',0,128,0,9800,0,80,80,0);
 INSERT INTO `mob_groups` VALUES (10168,3992,213,'Treasure_Chest',0,0,0,0,0,0,0,0);
