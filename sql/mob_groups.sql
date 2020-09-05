@@ -181,11 +181,11 @@ INSERT INTO `mob_groups` VALUES (36,3848,4,'Tartarus_Eft',330,0,2379,0,0,76,78,0
 INSERT INTO `mob_groups` VALUES (37,5762,4,'Splacknuck',0,32,3046,0,0,69,69,0);
 INSERT INTO `mob_groups` VALUES (38,1973,4,'Hobgoblin_Blagger',330,0,1325,0,0,82,84,0);
 INSERT INTO `mob_groups` VALUES (39,1981,4,'Hobgoblin_Toreador',330,0,1024,0,0,82,84,0);
-INSERT INTO `mob_groups` VALUES (40,4085,4,'Bight_Rarab',330,0,326,0,0,81,83,0);
-INSERT INTO `mob_groups` VALUES (41,5136,4,'Camelopard',330,0,432,0,0,83,85,0);
+INSERT INTO `mob_groups` VALUES (40,4085,4,'Bight_Rarab',330,0,326,0,0,79,80,0); -- (81-83)
+INSERT INTO `mob_groups` VALUES (41,5136,4,'Camelopard',330,0,432,0,0,80,82,0); -- (83-85)
 INSERT INTO `mob_groups` VALUES (42,1977,4,'Hobgoblin_Physician',330,0,1326,0,0,82,84,0);
 INSERT INTO `mob_groups` VALUES (43,1968,4,'Hobgoblin_Alastor',330,0,1323,0,0,82,84,0);
-INSERT INTO `mob_groups` VALUES (44,6172,4,'Hypnos_Eft',330,0,2379,0,0,81,84,0);
+INSERT INTO `mob_groups` VALUES (44,6172,4,'Hypnos_Eft',330,0,2379,0,0,78,81,0); -- (81-84)
 INSERT INTO `mob_groups` VALUES (45,1969,4,'Hobgoblin_Angler',330,0,1324,0,0,85,85,0);
 INSERT INTO `mob_groups` VALUES (46,3384,4,'Rohemolipaud',0,128,0,0,0,55,56,0);
 INSERT INTO `mob_groups` VALUES (47,895,4,'Dalham',0,128,0,9300,0,72,72,0);
