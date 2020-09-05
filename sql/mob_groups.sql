@@ -11937,13 +11937,13 @@ INSERT INTO `mob_groups` VALUES (4,6438,194,'Stink_Bats',480,0,241,0,0,15,18,0);
 INSERT INTO `mob_groups` VALUES (5,1011,194,'Desmodont',0,32,637,0,0,26,27,0);
 INSERT INTO `mob_groups` VALUES (6,3395,194,'Rotten_Jam',480,0,297,0,0,12,15,0);
 INSERT INTO `mob_groups` VALUES (7,5874,194,'Legalox_Heftyhind',600,0,3080,1800,0,32,33,0);
-INSERT INTO `mob_groups` VALUES (8,6429,194,'Fetor_Bats',330,0,0,0,0,81,83,0);
-INSERT INTO `mob_groups` VALUES (9,6413,194,'Fuligo',330,0,297,0,0,84,85,0);
+INSERT INTO `mob_groups` VALUES (8,6429,194,'Fetor_Bats',330,0,0,0,0,15,18,0); -- (81-83)
+INSERT INTO `mob_groups` VALUES (9,6413,194,'Fuligo',330,0,297,0,0,23,25,0); -- (84-85)
 INSERT INTO `mob_groups` VALUES (10,439,194,'Black_Slime',660,0,15,0,0,23,25,0);
 INSERT INTO `mob_groups` VALUES (11,1517,194,'Ghoul',660,0,961,0,0,23,26,0);
 INSERT INTO `mob_groups` VALUES (12,771,194,'Combat',660,0,82,0,0,20,23,0);
 INSERT INTO `mob_groups` VALUES (13,4568,194,'Ah_Puch',0,32,2836,0,0,29,30,0);
-INSERT INTO `mob_groups` VALUES (14,6462,194,'Thorn_Bat',330,0,0,0,0,82,85,0);
+INSERT INTO `mob_groups` VALUES (14,6462,194,'Thorn_Bat',330,0,0,0,0,20,23,0); -- (82-85)
 INSERT INTO `mob_groups` VALUES (15,4061,194,'Two_of_Cups',900,0,2506,0,0,1,5,0);
 INSERT INTO `mob_groups` VALUES (16,4059,194,'Two_of_Batons',900,0,2504,0,0,1,5,0);
 INSERT INTO `mob_groups` VALUES (17,4062,194,'Two_of_Swords',900,0,2507,0,0,1,5,0);
