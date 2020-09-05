@@ -12190,12 +12190,12 @@ INSERT INTO `mob_groups` VALUES (14,6551,198,'Ghoul',792,0,960,0,0,22,26,0);
 INSERT INTO `mob_groups` VALUES (15,6568,198,'Wendigo',300,0,2640,0,0,24,28,0);
 INSERT INTO `mob_groups` VALUES (16,6408,198,'Jelly',660,0,1407,0,0,26,28,0);
 INSERT INTO `mob_groups` VALUES (17,3165,198,'Poison_Leech',660,0,18,0,0,24,28,0);
-INSERT INTO `mob_groups` VALUES (18,6401,198,'Bleeder_Leech',330,0,18,0,0,83,85,0);
+INSERT INTO `mob_groups` VALUES (18,6401,198,'Bleeder_Leech',330,0,18,0,0,24,28,0); -- (83-85)
 INSERT INTO `mob_groups` VALUES (19,71,198,'Air_Elemental',792,4,40,0,0,33,36,0);
 INSERT INTO `mob_groups` VALUES (20,1160,198,'Earth_Elemental',792,4,736,0,0,33,36,0);
-INSERT INTO `mob_groups` VALUES (21,6437,198,'Chaser_Bats',330,0,80,0,0,83,85,0);
-INSERT INTO `mob_groups` VALUES (22,6314,198,'Carnivorous_Crawler',330,0,423,0,0,86,88,0);
-INSERT INTO `mob_groups` VALUES (23,6451,198,'Warren_Bat',330,0,82,0,0,86,88,0);
+INSERT INTO `mob_groups` VALUES (21,6437,198,'Chaser_Bats',330,0,80,0,0,23,26,0); -- (83-85)
+INSERT INTO `mob_groups` VALUES (22,6314,198,'Crypterpillar ',330,0,423,0,0,29,31,0); -- (86-88)
+INSERT INTO `mob_groups` VALUES (23,6451,198,'Warren_Bat',330,0,82,0,0,26,29,0); -- (86-88)
 INSERT INTO `mob_groups` VALUES (24,120,198,'Ancient_Bat',792,0,82,0,0,26,29,0);
 INSERT INTO `mob_groups` VALUES (25,3537,198,'Seeker_Bats',660,0,80,0,0,23,26,0);
 INSERT INTO `mob_groups` VALUES (26,5893,198,'Gloombound_Lurker',5400,0,3092,4000,0,48,48,0);
