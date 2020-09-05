@@ -12242,7 +12242,7 @@ INSERT INTO `mob_groups` VALUES (11,1291,200,'Fallen_Soldier',924,0,815,0,0,47,4
 INSERT INTO `mob_groups` VALUES (12,407,200,'Bhuta',924,0,264,0,0,47,49,0);
 INSERT INTO `mob_groups` VALUES (13,2968,200,'Old_Two-Wings',0,128,1851,0,0,52,52,0);
 INSERT INTO `mob_groups` VALUES (14,3648,200,'Skewer_Sam',0,128,2266,0,0,54,54,0);
-INSERT INTO `mob_groups` VALUES (15,6425,200,'Fortalice_Bats',330,0,919,0,0,92,96,0);
+INSERT INTO `mob_groups` VALUES (15,6425,200,'Fortalice_Bats',330,0,919,0,0,53,55,0); -- (92-96)
 INSERT INTO `mob_groups` VALUES (16,1328,200,'Fetid_Flesh',960,0,826,0,0,54,56,0);
 INSERT INTO `mob_groups` VALUES (17,5767,200,'Hazmat',0,32,3051,0,0,57,58,0);
 INSERT INTO `mob_groups` VALUES (18,1275,200,'Explosure',924,0,802,0,0,52,53,0);
@@ -12256,18 +12256,18 @@ INSERT INTO `mob_groups` VALUES (25,4379,200,'Wraith',960,0,2675,0,0,60,62,0);
 INSERT INTO `mob_groups` VALUES (26,689,200,'Chamber_Beetle',924,0,448,0,0,56,58,0);
 INSERT INTO `mob_groups` VALUES (27,6484,200,'Tainted_Flesh',960,0,2372,0,0,63,65,0);
 INSERT INTO `mob_groups` VALUES (28,1922,200,'Hellmine',960,0,1295,0,0,59,62,0);
-INSERT INTO `mob_groups` VALUES (29,1922,200,'Hellmine',330,0,1295,0,0,91,96,0);
+INSERT INTO `mob_groups` VALUES (29,1922,200,'Kaboom',330,0,1295,0,0,59,62,0); -- (91-96)
 INSERT INTO `mob_groups` VALUES (30,3078,200,'Over_Weapon',960,0,1968,0,0,59,62,0);
 INSERT INTO `mob_groups` VALUES (31,4207,200,'Vault_Weapon',960,0,2566,0,0,59,62,0);
 INSERT INTO `mob_groups` VALUES (32,1289,200,'Fallen_Major',300,0,813,0,0,59,62,0);
 INSERT INTO `mob_groups` VALUES (33,1288,200,'Fallen_Mage',300,0,812,0,0,59,62,0);
 INSERT INTO `mob_groups` VALUES (34,5841,200,'Hovering_Hotpot',0,32,3010,7000,9999,58,60,0);
-INSERT INTO `mob_groups` VALUES (35,6072,200,'Warden_Beetle',330,0,169,0,0,92,96,0);
+INSERT INTO `mob_groups` VALUES (35,6072,200,'Warden_Beetle',330,0,169,0,0,56,58,0); -- (92-96)
 INSERT INTO `mob_groups` VALUES (36,6424,200,'Funnel_Bats',924,0,919,0,0,51,55,0);
 INSERT INTO `mob_groups` VALUES (37,1831,200,'Guardian_Statue',0,128,1245,0,0,61,61,0);
 INSERT INTO `mob_groups` VALUES (38,2478,200,'Magic_Jug',960,0,1566,0,0,62,64,0);
 INSERT INTO `mob_groups` VALUES (39,5888,200,'Frogamander',7200,0,3087,7000,0,71,73,0);
-INSERT INTO `mob_groups` VALUES (40,6463,200,'Donjon_Bat',330,0,0,0,0,91,96,0);
+INSERT INTO `mob_groups` VALUES (40,6463,200,'Donjon_Bat',330,0,0,0,0,40,43,0); -- (91-96)
 INSERT INTO `mob_groups` VALUES (41,3549,200,'Serket',0,128,2203,50000,0,70,70,0);
 INSERT INTO `mob_groups` VALUES (42,2664,200,'Mimic',0,128,1690,0,0,63,65,0);
 INSERT INTO `mob_groups` VALUES (43,5531,200,'Light_Elemental',0,128,0,0,0,75,75,0);
