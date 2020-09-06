@@ -6052,7 +6052,7 @@ INSERT INTO `mob_groups` VALUES (16,3923,95,'Tiny_Lycopodium',330,0,1553,0,0,10,
 INSERT INTO `mob_groups` VALUES (17,1662,95,'Goblin_Franctireur',330,0,1058,0,0,56,59,0);
 INSERT INTO `mob_groups` VALUES (18,2145,95,'Jeduah',0,32,1406,0,0,17,18,0);
 INSERT INTO `mob_groups` VALUES (19,3371,95,'River_Crab',330,0,93,0,0,22,25,0);
-INSERT INTO `mob_groups` VALUES (20,5341,95,'Hispid_Rarab',330,0,2171,0,0,92,93,0);
+INSERT INTO `mob_groups` VALUES (20,5341,95,'Hispid_Rarab',330,0,2171,0,0,51,54,0); -- (92-93)
 INSERT INTO `mob_groups` VALUES (21,6262,95,'Yagudo_Mendicant',330,0,2730,0,0,61,64,0);
 INSERT INTO `mob_groups` VALUES (22,4454,95,'Yagudos_Elemental',0,128,0,0,0,56,58,0);
 INSERT INTO `mob_groups` VALUES (23,6263,95,'Yagudo_Piper',330,0,2742,0,0,61,64,0);
