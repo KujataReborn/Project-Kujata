@@ -5073,7 +5073,7 @@ INSERT INTO `mob_groups` VALUES (39,3381,88,'Rock_Lizard',330,0,2119,0,0,21,24,0
 INSERT INTO `mob_groups` VALUES (40,5871,88,'Peaseblossom',0,128,0,0,0,74,74,0);
 INSERT INTO `mob_groups` VALUES (41,2400,88,'Lesser_Wivre',330,0,1515,0,0,45,48,0);
 INSERT INTO `mob_groups` VALUES (42,6241,88,'Copper_Quadav',330,0,511,0,0,59,64,0);
-INSERT INTO `mob_groups` VALUES (43,5339,88,'Drachenlizard',330,0,3024,0,0,92,94,0);
+INSERT INTO `mob_groups` VALUES (43,3381,88,'Drachenlizard',330,0,3024,0,0,21,24,0); -- (92-94)
 INSERT INTO `mob_groups` VALUES (44,1688,88,'Goblin_Mine',0,128,0,0,0,51,51,0);
 INSERT INTO `mob_groups` VALUES (45,1713,88,'Goblin_Skirmisher',330,0,1158,0,0,56,59,0);
 INSERT INTO `mob_groups` VALUES (46,3448,88,'Sandworm',86400,0,0,0,0,85,85,0);
