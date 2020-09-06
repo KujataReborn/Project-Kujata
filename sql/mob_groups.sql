@@ -6378,7 +6378,7 @@ INSERT INTO `mob_groups` VALUES (29,3324,97,'Raptor',330,0,600,0,0,64,68,0);
 INSERT INTO `mob_groups` VALUES (30,303,97,'Axe_Beak',330,0,201,0,0,66,69,0);
 INSERT INTO `mob_groups` VALUES (31,2759,97,'Mountain_Jubjub',330,0,208,0,0,61,64,0);
 INSERT INTO `mob_groups` VALUES (32,6447,97,'Jubjub',330,0,208,0,0,42,45,0);
-INSERT INTO `mob_groups` VALUES (33,5342,97,'Condor',330,0,208,0,0,90,93,0);
+INSERT INTO `mob_groups` VALUES (33,5342,97,'Condor',330,0,208,0,0,60,63,0); -- (90-93)
 INSERT INTO `mob_groups` VALUES (34,1160,97,'Earth_Elemental',330,4,733,0,0,75,75,0);
 INSERT INTO `mob_groups` VALUES (35,1341,97,'Fire_Elemental',330,4,831,0,0,75,75,0);
 INSERT INTO `mob_groups` VALUES (36,3745,97,'Sprite',330,0,2001,0,0,66,67,0);
