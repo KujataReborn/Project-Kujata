@@ -4359,7 +4359,7 @@ INSERT INTO `mob_groups` VALUES (1,3805,83,'Submarine_Nipper',0,128,93,0,0,63,67
 INSERT INTO `mob_groups` VALUES (2,3885,83,'Thalassic_Pugil',0,128,463,0,0,61,67,0);
 INSERT INTO `mob_groups` VALUES (3,23,83,'Abyssal_Pugil',0,128,463,0,0,61,67,0);
 INSERT INTO `mob_groups` VALUES (4,6394,83,'Bloodsucker',0,128,174,0,0,60,65,0);
-INSERT INTO `mob_groups` VALUES (5,5174,83,'Duriumshell',300,0,0,0,0,92,94,0);
+INSERT INTO `mob_groups` VALUES (5,5174,83,'Duriumshell',300,0,0,0,0,62,64,0); -- (92-94)
 INSERT INTO `mob_groups` VALUES (6,1334,83,'Fierce_Smilodon',330,0,828,0,0,67,70,0);
 INSERT INTO `mob_groups` VALUES (7,653,83,'Carrion_Marabou',330,0,427,0,0,36,38,0);
 INSERT INTO `mob_groups` VALUES (8,71,83,'Air_Elemental',330,4,38,0,0,45,45,0);
