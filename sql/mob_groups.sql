@@ -5212,7 +5212,7 @@ INSERT INTO `mob_groups` VALUES (12,5648,89,'Wivre',330,0,2665,0,0,68,74,0);
 INSERT INTO `mob_groups` VALUES (13,2275,89,'Knotty_Treant',330,0,1458,0,0,62,65,0);
 INSERT INTO `mob_groups` VALUES (14,1664,89,'Goblin_Freesword',330,0,1063,0,0,61,64,0);
 INSERT INTO `mob_groups` VALUES (15,1646,89,'Goblin_Corpsman',330,0,1024,0,0,62,64,0);
-INSERT INTO `mob_groups` VALUES (16,5340,89,'Feyweald_Sapling',330,0,2620,0,0,92,94,0);
+INSERT INTO `mob_groups` VALUES (16,5340,89,'Feyweald_Sapling',330,0,2620,0,0,36,39,0); -- (92-94)
 INSERT INTO `mob_groups` VALUES (17,1638,89,'Goblin_Blastmaster',330,0,1024,0,0,62,64,0);
 INSERT INTO `mob_groups` VALUES (18,3912,89,'Thunder_Elemental',330,4,2410,0,0,75,75,0);
 INSERT INTO `mob_groups` VALUES (19,6312,89,'Chigoe',330,0,466,0,0,62,65,0);
