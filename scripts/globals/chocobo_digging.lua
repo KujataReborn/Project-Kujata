@@ -262,36 +262,34 @@ local digInfo =
     },
     [tpz.zone.VALKURM_DUNES] = -- 103
     {
-        {  880, 224, digReq.NONE    },
-        {  887,  39, digReq.NONE    },
-        {  645,  14, digReq.NONE    },
-        {  893, 105, digReq.NONE    },
-        {  737,  17, digReq.NONE    },
-        {  643,  64, digReq.NONE    },
-        {17296, 122, digReq.NONE    },
-        {  942,   6, digReq.NONE    },
-        {  642,  58, digReq.NONE    },
-        {  864,  22, digReq.NONE    },
-        {  843,   4, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
-        { 1255,  10, digReq.NONE    }, -- all ores
-        {  845, 122, digReq.BURROW  },
-        {  844,  71, digReq.BURROW  },
-        { 1845,  33, digReq.BURROW  },
-        {  838,  11, digReq.BURROW  },
-        {  902,   6, digReq.BORE    },
-        {  886,   3, digReq.BORE    },
-        {  867,   3, digReq.BORE    },
-        { 1587,  19, digReq.BORE    },
-        {  888,  25, digReq.BORE    },
-        { 1586,   8, digReq.BORE    },
-        {  885,  10, digReq.BORE    },
-        {  866,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+		{  770,   5, digReq.NONE    }, -- blue rock
+		{  864, 100, digReq.NONE    }, -- fish scales
+		{  869,  10, digReq.NONE    }, -- lizard molt
+		{  880, 150, digReq.NONE    }, -- bone chip
+		{  885,  10, digReq.NONE    }, -- turtle shell
+		{  888, 200, digReq.NONE    }, -- seashell
+		{  893,  25, digReq.NONE    }, -- giant femur
+		{ 1255,  10, digReq.NONE    }, -- all ores
+		{ 4096, 100, digReq.NONE    }, -- all crystals
+		{ 4484,  60, digReq.NONE    }, -- shall shell
+		{17395, 100, digReq.NONE    }, -- lugworm
+		{17397,  20, digReq.NONE    }, -- shell bug
+		{  838,   5, digReq.BURROW  }, -- spider web
+		{  843,   5, digReq.BURROW  }, -- giant bird feather
+		{  844,   5, digReq.BURROW  }, -- phoenix feather
+		{  845, 125, digReq.BURROW  }, -- black chocobo feather
+		{ 1845,  25, digReq.BURROW  }, -- red moko grass
+		{  866,   5, digReq.BORE    }, -- wyvern scales
+		{  867,   5, digReq.BORE    }, -- dragon scales
+		{  886,   5, digReq.BORE    }, -- demon skull
+		{  902,   5, digReq.BORE    }, -- demon horn
+		{ 1587,  20, digReq.BORE    }, -- high quality pugil scales
+		{ 1586,   5, digReq.BORE    }, -- titanictus shell
+		{ 1188,  10, digReq.MODIFIER}, -- sairui-ran
+		{ 4409,  10, digReq.MODIFIER}, -- hard-boiled egg
+		{ 4487,  10, digReq.MODIFIER}, -- colored egg
+		{ 4532,  10, digReq.MODIFIER}, -- soft-boiled egg
+		{ 4570,  10, digReq.MODIFIER}, -- bird egg
     },
     [tpz.zone.JUGNER_FOREST] = -- 104
     {
