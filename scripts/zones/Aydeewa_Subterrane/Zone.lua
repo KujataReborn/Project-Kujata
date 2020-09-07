@@ -49,7 +49,7 @@ function onEventFinish(player, csid, option)
     if
         csid == 3 and
         option == 13 and
-        npcUtil.completeQuest(player, AHT_URHGAN, tpz.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, {title=tpz.title.BEARER_OF_THE_MARK_OF_ZAHAK, ki=tpz.ki.MARK_OF_ZAHAK, var={"AnEmptyVesselProgress", "EmptyVesselStone"}})
+        npcUtil.completeQuest(player, AHT_URHGAN, tpz.quest.id.ahtUrhgan.AN_EMPTY_VESSEL, {title=tpz.title.BEARER_OF_THE_MARK_OF_ZAHAK, keyItem=tpz.ki.MARK_OF_ZAHAK, var={"AnEmptyVesselProgress", "EmptyVesselStone"}})
     then -- Accept and unlock
         player:unlockJob(tpz.job.BLU)
         player:setPos(148, -2, 0, 130, 50)
