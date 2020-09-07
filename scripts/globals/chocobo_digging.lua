@@ -121,36 +121,36 @@ local digInfo =
     },
     [tpz.zone.WAJAOM_WOODLANDS] = -- 51
     {
-        {  770,  50, digReq.NONE    },
-        { 2150,  60, digReq.NONE    },
-        {  622, 197, digReq.NONE    },
-        { 2155,  23, digReq.NONE    },
-        {  739,   5, digReq.NONE    },
-        {17296, 133, digReq.NONE    },
-        {  703,  69, digReq.NONE    },
-        { 2213, 135, digReq.NONE    },
-        {  838,  21, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
+        {  646,   3, digReq.NONE    }, -- adaman ore
+        {  702,  52, digReq.NONE    }, -- ebony log
+        {  739,   5, digReq.NONE    }, -- orichalcum ore 
+        {  770,  31, digReq.NONE    }, -- blue rock
+        {  833, 190, digReq.NONE    }, -- moko grass
+        {  838,   4, digReq.NONE    }, -- spider web
+        {  845,  75, digReq.NONE    }, -- black chocobo feather
         { 1255,  10, digReq.NONE    }, -- all ores
-        {  688, 144, digReq.BURROW  },
-        {  702,  14, digReq.BURROW  },
-        {  690,  23, digReq.BURROW  },
-        { 1446,   3, digReq.BURROW  },
-        {  700,  14, digReq.BURROW  },
-        {  699,  37, digReq.BURROW  },
-        {  701,  28, digReq.BURROW  },
-        {  696,  23, digReq.BURROW  },
-        {  678,   9, digReq.BORE    },
-        {  645,   3, digReq.BORE    },
-        {  768, 193, digReq.BORE    },
-        {  737,  22, digReq.BORE    },
-        { 2475,   3, digReq.BORE    },
-        {  738,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+        { 2164,  17, digReq.NONE    }, -- pephredo hive chip
+        { 2213, 152, digReq.NONE    }, -- pine nuts
+        { 4096, 100, digReq.NONE    }, -- all crystals
+        {17296,	147, digReq.NONE    }, -- pebble
+        {  688, 144, digReq.BURROW  }, -- arrowwood log
+        {  690,  23, digReq.BURROW  }, -- elm log
+        {  696,  23, digReq.BURROW  }, -- yew log
+        {  699,  37, digReq.BURROW  }, -- oak log
+        {  700,  14, digReq.BURROW  }, -- mahogany log
+        {  701,  28, digReq.BURROW  }, -- rosewood log
+        { 1446,   3, digReq.BURROW  }, -- lacquer tree log
+        {  645,   3, digReq.BORE    }, -- darksteel ore
+        {  678,   9, digReq.BORE    }, -- aluminum ore
+        {  737,  22, digReq.BORE    }, -- gold ore
+        {  738,   3, digReq.BORE    }, -- platinum ore
+        {  768, 193, digReq.BORE    }, -- flint stone
+        { 2475,   3, digReq.BORE    }, -- kaolin
+        { 1188,  10, digReq.MODIFIER}, -- sairui-ran
+        { 4409,  12, digReq.MODIFIER}, -- hard boiled egg
+        { 4487,  11, digReq.MODIFIER}, -- colored egg
+        { 4532,  12, digReq.MODIFIER}, -- soft boild egg
+        { 4570,  10, digReq.MODIFIER}, -- bird egg
     },
     [tpz.zone.BHAFLAU_THICKETS] = -- 52
     {
@@ -262,36 +262,34 @@ local digInfo =
     },
     [tpz.zone.VALKURM_DUNES] = -- 103
     {
-        {  880, 224, digReq.NONE    },
-        {  887,  39, digReq.NONE    },
-        {  645,  14, digReq.NONE    },
-        {  893, 105, digReq.NONE    },
-        {  737,  17, digReq.NONE    },
-        {  643,  64, digReq.NONE    },
-        {17296, 122, digReq.NONE    },
-        {  942,   6, digReq.NONE    },
-        {  642,  58, digReq.NONE    },
-        {  864,  22, digReq.NONE    },
-        {  843,   4, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
-        { 1255,  10, digReq.NONE    }, -- all ores
-        {  845, 122, digReq.BURROW  },
-        {  844,  71, digReq.BURROW  },
-        { 1845,  33, digReq.BURROW  },
-        {  838,  11, digReq.BURROW  },
-        {  902,   6, digReq.BORE    },
-        {  886,   3, digReq.BORE    },
-        {  867,   3, digReq.BORE    },
-        { 1587,  19, digReq.BORE    },
-        {  888,  25, digReq.BORE    },
-        { 1586,   8, digReq.BORE    },
-        {  885,  10, digReq.BORE    },
-        {  866,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+		{  770,   5, digReq.NONE    }, -- blue rock
+		{  864, 100, digReq.NONE    }, -- fish scales
+		{  869,  10, digReq.NONE    }, -- lizard molt
+		{  880, 150, digReq.NONE    }, -- bone chip
+		{  885,  10, digReq.NONE    }, -- turtle shell
+		{  888, 200, digReq.NONE    }, -- seashell
+		{  893,  25, digReq.NONE    }, -- giant femur
+		{ 1255,  10, digReq.NONE    }, -- all ores
+		{ 4096, 100, digReq.NONE    }, -- all crystals
+		{ 4484,  60, digReq.NONE    }, -- shall shell
+		{17395, 100, digReq.NONE    }, -- lugworm
+		{17397,  20, digReq.NONE    }, -- shell bug
+		{  838,   5, digReq.BURROW  }, -- spider web
+		{  843,   5, digReq.BURROW  }, -- giant bird feather
+		{  844,   5, digReq.BURROW  }, -- phoenix feather
+		{  845, 125, digReq.BURROW  }, -- black chocobo feather
+		{ 1845,  25, digReq.BURROW  }, -- red moko grass
+		{  866,   5, digReq.BORE    }, -- wyvern scales
+		{  867,   5, digReq.BORE    }, -- dragon scales
+		{  886,   5, digReq.BORE    }, -- demon skull
+		{  902,   5, digReq.BORE    }, -- demon horn
+		{ 1587,  20, digReq.BORE    }, -- high quality pugil scales
+		{ 1586,   5, digReq.BORE    }, -- titanictus shell
+		{ 1188,  10, digReq.MODIFIER}, -- sairui-ran
+		{ 4409,  10, digReq.MODIFIER}, -- hard-boiled egg
+		{ 4487,  10, digReq.MODIFIER}, -- colored egg
+		{ 4532,  10, digReq.MODIFIER}, -- soft-boiled egg
+		{ 4570,  10, digReq.MODIFIER}, -- bird egg
     },
     [tpz.zone.JUGNER_FOREST] = -- 104
     {
@@ -552,36 +550,35 @@ local digInfo =
     },
     [tpz.zone.TAHRONGI_CANYON] = -- 117
     {
-        {  880, 224, digReq.NONE    },
-        {  887,  39, digReq.NONE    },
-        {  645,  14, digReq.NONE    },
-        {  893, 105, digReq.NONE    },
-        {  737,  17, digReq.NONE    },
-        {  643,  64, digReq.NONE    },
-        {17296, 122, digReq.NONE    },
-        {  942,   6, digReq.NONE    },
-        {  642,  58, digReq.NONE    },
-        {  864,  22, digReq.NONE    },
-        {  843,   4, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
+        {  641,  60, digReq.NONE    }, -- tin ore
+        {  748,   5, digReq.NONE    }, -- gold beastcoin
+        {  737,  20, digReq.NONE    }, -- gold ore
+        {  769,  10, digReq.NONE    }, -- red rock
+        {  841,  50, digReq.NONE    }, -- yagudo feather
+        {  846,  50, digReq.NONE    }, -- insect wing
+        {  880, 100, digReq.NONE    }, -- bone chip
+        {  888, 100, digReq.NONE    }, -- seashell
+        {  893,  60, digReq.NONE    }, -- giant femur
         { 1255,  10, digReq.NONE    }, -- all ores
-        {  656,  95, digReq.BURROW  },
-        {  749,  26, digReq.BURROW  },
-        {  751,  33, digReq.BURROW  },
-        {  750,  89, digReq.BURROW  },
-        {  902,   6, digReq.BORE    },
-        {  886,   3, digReq.BORE    },
-        {  867,   3, digReq.BORE    },
-        { 1587,  19, digReq.BORE    },
-        {  888,  25, digReq.BORE    },
-        { 1586,   8, digReq.BORE    },
-        {  885,  10, digReq.BORE    },
-        {  866,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+        { 4096, 100, digReq.NONE    }, -- all crystals
+        {17296, 100, digReq.NONE    }, -- pebble
+        {  656, 100, digReq.BURROW  }, -- beastcoin
+        {  749,  25, digReq.BURROW  }, -- mythril beastcoin
+        {  750,  50, digReq.BURROW  }, -- silver beastcoin
+        {  751,   5, digReq.BURROW  }, -- platinum beastcoin
+        {  864, 100, digReq.BORE    }, -- fish scales
+        {  866,   5, digReq.BORE    }, -- wyvern scales
+        {  867,   5, digReq.BORE    }, -- dragon scales
+        {  885,  10, digReq.BORE    }, -- turtle shell
+        {  886,   5, digReq.BORE    }, -- demon skull
+        {  902,   5, digReq.BORE    }, -- demon horn
+        { 1586,   5, digReq.BORE    }, -- titanictus shell
+        { 1587,  20, digReq.BORE    }, -- high quality pugil scales
+        { 4570,  10, digReq.MODIFIER}, -- bird egg 
+        { 4487,  10, digReq.MODIFIER}, -- colored egg 
+        { 4409,  10, digReq.MODIFIER}, -- hard-boiled egg 
+        { 1188,  10, digReq.MODIFIER}, -- sairui-ran
+        { 4532,  10, digReq.MODIFIER}, -- soft-boiled egg
     },
     [tpz.zone.BUBURIMU_PENINSULA] = -- 118
     {
@@ -863,12 +860,12 @@ local function calculateSkillUp(player)
     local increment = 1
 
     -- this probably needs correcting
-    local roll = math.random(0, 100)
+    local roll = math.random(1000)
 
     -- make sure our skill isn't capped
     if realSkill < maxSkill then
         -- can we skill up?
-        if roll <= 15 then
+        if roll <= (50 - (skillRank * 5)) then
             if (increment + realSkill) > maxSkill then
                 increment = maxSkill - realSkill
             end
