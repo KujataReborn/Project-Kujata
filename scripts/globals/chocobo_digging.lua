@@ -121,36 +121,36 @@ local digInfo =
     },
     [tpz.zone.WAJAOM_WOODLANDS] = -- 51
     {
-        {  770,  50, digReq.NONE    },
-        { 2150,  60, digReq.NONE    },
-        {  622, 197, digReq.NONE    },
-        { 2155,  23, digReq.NONE    },
-        {  739,   5, digReq.NONE    },
-        {17296, 133, digReq.NONE    },
-        {  703,  69, digReq.NONE    },
-        { 2213, 135, digReq.NONE    },
-        {  838,  21, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
+        {  646,   3, digReq.NONE    }, -- adaman ore
+        {  702,  52, digReq.NONE    }, -- ebony log
+        {  739,   5, digReq.NONE    }, -- orichalcum ore 
+        {  770,  31, digReq.NONE    }, -- blue rock
+        {  833, 190, digReq.NONE    }, -- moko grass
+        {  838,   4, digReq.NONE    }, -- spider web
+        {  845,  75, digReq.NONE    }, -- black chocobo feather
         { 1255,  10, digReq.NONE    }, -- all ores
-        {  688, 144, digReq.BURROW  },
-        {  702,  14, digReq.BURROW  },
-        {  690,  23, digReq.BURROW  },
-        { 1446,   3, digReq.BURROW  },
-        {  700,  14, digReq.BURROW  },
-        {  699,  37, digReq.BURROW  },
-        {  701,  28, digReq.BURROW  },
-        {  696,  23, digReq.BURROW  },
-        {  678,   9, digReq.BORE    },
-        {  645,   3, digReq.BORE    },
-        {  768, 193, digReq.BORE    },
-        {  737,  22, digReq.BORE    },
-        { 2475,   3, digReq.BORE    },
-        {  738,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+        { 2164,  17, digReq.NONE    }, -- pephredo hive chip
+        { 2213, 152, digReq.NONE    }, -- pine nuts
+        { 4096, 100, digReq.NONE    }, -- all crystals
+        {17296,	147, digReq.NONE    }, -- pebble
+        {  688, 144, digReq.BURROW  }, -- arrowwood log
+        {  690,  23, digReq.BURROW  }, -- elm log
+        {  696,  23, digReq.BURROW  }, -- yew log
+        {  699,  37, digReq.BURROW  }, -- oak log
+        {  700,  14, digReq.BURROW  }, -- mahogany log
+        {  701,  28, digReq.BURROW  }, -- rosewood log
+        { 1446,   3, digReq.BURROW  }, -- lacquer tree log
+        {  645,   3, digReq.BORE    }, -- darksteel ore
+        {  678,   9, digReq.BORE    }, -- aluminum ore
+        {  737,  22, digReq.BORE    }, -- gold ore
+        {  738,   3, digReq.BORE    }, -- platinum ore
+        {  768, 193, digReq.BORE    }, -- flint stone
+        { 2475,   3, digReq.BORE    }, -- kaolin
+        { 1188,  10, digReq.MODIFIER}, -- sairui-ran
+        { 4409,  12, digReq.MODIFIER}, -- hard boiled egg
+        { 4487,  11, digReq.MODIFIER}, -- colored egg
+        { 4532,  12, digReq.MODIFIER}, -- soft boild egg
+        { 4570,  10, digReq.MODIFIER}, -- bird egg
     },
     [tpz.zone.BHAFLAU_THICKETS] = -- 52
     {
