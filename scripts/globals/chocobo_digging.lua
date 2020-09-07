@@ -863,12 +863,12 @@ local function calculateSkillUp(player)
     local increment = 1
 
     -- this probably needs correcting
-    local roll = math.random(0, 100)
+    local roll = math.random(1000)
 
     -- make sure our skill isn't capped
     if realSkill < maxSkill then
         -- can we skill up?
-        if roll <= 15 then
+        if roll <= (50 - (skillRank * 5)) then
             if (increment + realSkill) > maxSkill then
                 increment = maxSkill - realSkill
             end
