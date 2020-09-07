@@ -550,36 +550,35 @@ local digInfo =
     },
     [tpz.zone.TAHRONGI_CANYON] = -- 117
     {
-        {  880, 224, digReq.NONE    },
-        {  887,  39, digReq.NONE    },
-        {  645,  14, digReq.NONE    },
-        {  893, 105, digReq.NONE    },
-        {  737,  17, digReq.NONE    },
-        {  643,  64, digReq.NONE    },
-        {17296, 122, digReq.NONE    },
-        {  942,   6, digReq.NONE    },
-        {  642,  58, digReq.NONE    },
-        {  864,  22, digReq.NONE    },
-        {  843,   4, digReq.NONE    },
-        { 4096, 100, digReq.NONE    }, -- all crystals
+        {  641,  60, digReq.NONE    }, -- tin ore
+        {  748,   5, digReq.NONE    }, -- gold beastcoin
+        {  737,  20, digReq.NONE    }, -- gold ore
+        {  769,  10, digReq.NONE    }, -- red rock
+        {  841,  50, digReq.NONE    }, -- yagudo feather
+        {  846,  50, digReq.NONE    }, -- insect wing
+        {  880, 100, digReq.NONE    }, -- bone chip
+        {  888, 100, digReq.NONE    }, -- seashell
+        {  893,  60, digReq.NONE    }, -- giant femur
         { 1255,  10, digReq.NONE    }, -- all ores
-        {  656,  95, digReq.BURROW  },
-        {  749,  26, digReq.BURROW  },
-        {  751,  33, digReq.BURROW  },
-        {  750,  89, digReq.BURROW  },
-        {  902,   6, digReq.BORE    },
-        {  886,   3, digReq.BORE    },
-        {  867,   3, digReq.BORE    },
-        { 1587,  19, digReq.BORE    },
-        {  888,  25, digReq.BORE    },
-        { 1586,   8, digReq.BORE    },
-        {  885,  10, digReq.BORE    },
-        {  866,   3, digReq.BORE    },
-        { 4570,  10, digReq.MODIFIER},
-        { 4487,  11, digReq.MODIFIER},
-        { 4409,  12, digReq.MODIFIER},
-        { 1188,  10, digReq.MODIFIER},
-        { 4532,  12, digReq.MODIFIER},
+        { 4096, 100, digReq.NONE    }, -- all crystals
+        {17296, 100, digReq.NONE    }, -- pebble
+        {  656, 100, digReq.BURROW  }, -- beastcoin
+        {  749,  25, digReq.BURROW  }, -- mythril beastcoin
+        {  750,  50, digReq.BURROW  }, -- silver beastcoin
+        {  751,   5, digReq.BURROW  }, -- platinum beastcoin
+        {  864, 100, digReq.BORE    }, -- fish scales
+        {  866,   5, digReq.BORE    }, -- wyvern scales
+        {  867,   5, digReq.BORE    }, -- dragon scales
+        {  885,  10, digReq.BORE    }, -- turtle shell
+        {  886,   5, digReq.BORE    }, -- demon skull
+        {  902,   5, digReq.BORE    }, -- demon horn
+        { 1586,   5, digReq.BORE    }, -- titanictus shell
+        { 1587,  20, digReq.BORE    }, -- high quality pugil scales
+        { 4570,  10, digReq.MODIFIER}, -- bird egg 
+        { 4487,  10, digReq.MODIFIER}, -- colored egg 
+        { 4409,  10, digReq.MODIFIER}, -- hard-boiled egg 
+        { 1188,  10, digReq.MODIFIER}, -- sairui-ran
+        { 4532,  10, digReq.MODIFIER}, -- soft-boiled egg
     },
     [tpz.zone.BUBURIMU_PENINSULA] = -- 118
     {
