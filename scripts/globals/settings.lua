@@ -35,6 +35,7 @@ FOV_REWARD_ALLIANCE = 0 -- Allow Fields of Valor rewards while being a member of
 GOV_REWARD_ALLIANCE = 1 -- Allow Grounds of Valor rewards while being a member of an alliance. (default retail behavior: 1)
 
 ENABLE_HUNT_REGISTRY = 0
+ENABLE_SYNERGY = 0
 
 -- TREASURE CASKETS
 -- Retail droprate = 0.1 (10%) with no other effects active
