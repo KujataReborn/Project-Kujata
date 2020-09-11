@@ -17,9 +17,8 @@ function onAbilityCheck(player, target, ability)
 end
 
 function onUseAbility(player, target, ability)
-    local baseDuration = 180
     local durationMultiplier = 1.0 + utils.clamp(player:getMod(tpz.mod.JIG_DURATION), 0, 50) / 100
-    local finalDuration = math.floor(baseDuration * durationMultiplier * SNEAK_INVIS_DURATION_MULTIPLIER)
+    local finalDuration = math.floor(math.random(60, 180) * durationMultiplier * SNEAK_INVIS_DURATION_MULTIPLIER)
 
     if (player:hasStatusEffect(tpz.effect.SNEAK) == false) then
         player:addStatusEffect(tpz.effect.SNEAK, 0, 10, finalDuration)
