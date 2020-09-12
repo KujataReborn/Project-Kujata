@@ -2008,7 +2008,7 @@ namespace battleutils
                 float sBlowMult = 1.0f - (std::clamp((float)PAttacker->getMod(Mod::SUBTLE_BLOW), 0.0f, 50.0f) / 100.0f);
                 float storeTp = 1.0f + ((float)(PDefender->getMod(Mod::STORETP)) / 100.0f);
 
-                if (PDefender->objtype == TYPE_PC)
+                if (PDefender->objtype == TYPE_PC || (PDefender->objtype == TYPE_PET && PDefender->PMaster && PDefender->PMaster->objtype == TYPE_PC))
                 {
                     baseTp /= 3;
 
@@ -2365,7 +2365,7 @@ namespace battleutils
 
         if (PAttacker->objtype == TYPE_PC)
         {
-            ratioCap = 2.25f;
+            ratioCap = isCritical ? 3 : 2.25f;
         }
         if (PAttacker->objtype == TYPE_MOB)
         {
