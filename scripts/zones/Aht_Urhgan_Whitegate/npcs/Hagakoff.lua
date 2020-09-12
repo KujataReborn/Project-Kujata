@@ -22,7 +22,7 @@ function onTrigger(player, npc)
         16551,    776,    -- Sapara
         16552,   4525,    -- Scimitar
         16553,  38800,    -- Tulwar (Requires Astral Candescence)
-        16657,   6600,    -- Tabar
+        16657,  66000,    -- Tabar
         16658, 124305,    -- Darksteel Tabar (Requires Astral Candescence)
         16704,    672,    -- Butterfly Axe
         16705,   4550,    -- Greataxe (Requires Astral Candescence)

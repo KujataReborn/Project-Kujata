@@ -12,17 +12,16 @@ end
 function onTrigger(player, npc)
     local stock =
     {
-        4150,  2595,    -- Eye Drops
-        4148,   316,    -- Antidote
-        4151,   800,    -- Echo Drops
-        4112,   910,    -- Potion
-        4128,  4832,    -- Ether
-        4155,  3360,    -- Remedy
-        4509,    12,    -- Distilled Water
-        18731,   50,    -- Automaton Oil
-        18732,  250,    -- Automaton Oil +1
-        18733,  500,    -- Automaton Oil +2
-        19185, 1000     -- Automaton Oil +3
+        4150,  2595, -- Eye Drops
+        4148,   316, -- Antidote
+        4151,   800, -- Echo Drops
+        4112,   910, -- Potion
+        4128,  4832, -- Ether
+        4155,  3360, -- Remedy
+        4509,    12, -- Distilled Water
+        18731,  200, -- Automaton Oil
+        18732,  500, -- Automaton Oil +1
+        18733, 1000, -- Automaton Oil +2
     }
 
     player:showText(npc, ID.text.GAVRIE_SHOP_DIALOG)

@@ -10,18 +10,21 @@ require("scripts/globals/shop")
 function onTrigger(player, npc)
     local stock =
     {
+        16473,  5713, 1, -- Kukri
         16537, 31648, 1, -- Mythril Sword
         16545, 21535, 1, -- Broadsword
         16513, 11845, 1, -- Tuck
         16558, 62560, 1, -- Falchion
+
+        16466,  2231, 2, -- Knife
         16536,  7286, 2, -- Iron Sword
         16552,  4163, 2, -- Scimitar
+
+        16465,  2192, 3, -- Bronze Knife
+        16405,   104, 3, -- Cat Baghnakhs
         16535,   246, 3, -- Bronze Sword
         16517,  9406, 3, -- Degen
         16551,   713, 3, -- Sapara
-        16530,   618, 3, -- Xiphos
-        16565,  1711, 3, -- Spatha
-        16512,  3215, 3, -- Bilbo
     }
 
     player:showText(npc, ID.text.ZHIKKOM_SHOP_DIALOG)

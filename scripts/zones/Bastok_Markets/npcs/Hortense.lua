@@ -23,7 +23,6 @@ function onTrigger(player, npc)
         5002,    21, 3,    -- Scroll of Valor Minuet
         5003,  1101, 3,    -- Scroll of Valor Minuet II
         5004,  5544, 3,    -- Scroll of Valor Minuet III
-        5006, 53820, 3,    -- Scroll of Valor Minuet V
     }
 
     player:showText(npc, ID.text.HORTENSE_SHOP_DIALOG)
