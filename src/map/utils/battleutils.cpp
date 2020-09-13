@@ -2012,7 +2012,10 @@ namespace battleutils
                 {
                     baseTp /= 3;
 
-                    storeTp += ((CCharEntity*)PDefender)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PDefender) / 100.0f;
+                    if (PDefender->objtype == TYPE_PC)
+                    {
+                        storeTp += ((CCharEntity*)PDefender)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PDefender) / 100.0f;
+                    }
                 }
                 else
                 {
