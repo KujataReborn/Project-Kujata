@@ -982,7 +982,7 @@ tpz.regime.clearRegimeVars = function(player)
     player:setCharVar("[regime]zone", 0)
     player:setCharVar("[regime]id", 0)
     player:setCharVar("[regime]repeat", 0)
-    player:setCharVar("[regime]lastReward", 0)
+    -- player:setCharVar("[regime]lastReward", 0)
 
     for i = 1, 4 do
         player:setCharVar("[regime]needed" .. i, 0)
