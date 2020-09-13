@@ -101,7 +101,7 @@ along with this program.  If not, see http://www.gnu.org/licenses/
 ************************************************************************/
 
 // Number of rows in the exp table
-static constexpr int32 ExpTableRowCount = 60;
+static constexpr int32 ExpTableRowCount = 50;
 std::array<std::array<uint16, 20>, ExpTableRowCount> g_ExpTable;
 std::array<uint16, 100> g_ExpPerLevel;
 
@@ -3130,12 +3130,11 @@ namespace charutils
         uint32 baseExp = GetRealExp(charlvl, moblvl);
 
         if (baseExp >= 400) return EMobDifficulty::IncrediblyTough;
-        if (baseExp >= 350) return EMobDifficulty::VeryTough;
-        if (baseExp >= 220) return EMobDifficulty::Tough;
-        if (baseExp >= 200) return EMobDifficulty::EvenMatch;
-        if (baseExp >= 160) return EMobDifficulty::DecentChallenge;
-        if (baseExp >= 60) return EMobDifficulty::EasyPrey;
-        if (baseExp >= 14) return EMobDifficulty::IncrediblyEasyPrey;
+        if (baseExp >= 240) return EMobDifficulty::VeryTough;
+        if (baseExp >= 120) return EMobDifficulty::Tough;
+        if (baseExp == 100) return EMobDifficulty::EvenMatch;
+        if (baseExp >=  75) return EMobDifficulty::DecentChallenge;
+        if (baseExp >=  15) return EMobDifficulty::EasyPrey;
 
         return EMobDifficulty::TooWeak;
     }
@@ -3148,7 +3147,7 @@ namespace charutils
 
     uint32 GetRealExp(uint8 charlvl, uint8 moblvl)
     {
-        const int32 levelDif = moblvl - charlvl + 44;
+        const int32 levelDif = moblvl - charlvl + 34;
 
         if ((charlvl > 0) && (charlvl < 100))
             return g_ExpTable[std::clamp(levelDif, 0, ExpTableRowCount - 1)][(charlvl - 1) / 5];
