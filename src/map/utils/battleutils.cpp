@@ -1962,8 +1962,8 @@ namespace battleutils
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
 
-                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
-                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                if (subWeapon && subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
                     !weapon->isHandToHand())
                 {
                     delay /= 2;
@@ -2119,8 +2119,8 @@ namespace battleutils
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
 
-                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
-                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                if (subWeapon && subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
                     !weapon->isHandToHand())
                 {
                     delay /= 2;
