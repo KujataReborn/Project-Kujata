@@ -145,7 +145,8 @@ bool CBattleEntity::isSitting()
 
 bool CBattleEntity::isDualWielding()
 {
-    if (dynamic_cast<CItemWeapon*>(m_Weapons[SLOT_SUB])->getDmgType() > 0 && dynamic_cast<CItemWeapon*>(m_Weapons[SLOT_SUB])->getDmgType() < 4)
+    auto subWeapon = dynamic_cast<CItemWeapon*>(m_Weapons[SLOT_SUB]);
+    if (subWeapon && subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4)
     {
         return true;
     }

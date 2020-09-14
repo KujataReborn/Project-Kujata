@@ -1962,8 +1962,8 @@ namespace battleutils
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
 
-                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
-                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                if (subWeapon && subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
                     !weapon->isHandToHand())
                 {
                     delay /= 2;
@@ -2012,7 +2012,10 @@ namespace battleutils
                 {
                     baseTp /= 3;
 
-                    storeTp += ((CCharEntity*)PDefender)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PDefender) / 100.0f;
+                    if (PDefender->objtype == TYPE_PC)
+                    {
+                        storeTp += ((CCharEntity*)PDefender)->PMeritPoints->GetMeritValue(MERIT_STORE_TP_EFFECT, (CCharEntity*)PDefender) / 100.0f;
+                    }
                 }
                 else
                 {
@@ -2119,8 +2122,8 @@ namespace battleutils
             {
                 int16 delay = PAttacker->GetWeaponDelay(true);
 
-                if (auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
-                    subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
+                auto subWeapon = dynamic_cast<CItemWeapon*>(PAttacker->m_Weapons[SLOT_SUB]);
+                if (subWeapon && subWeapon->getDmgType() > 0 && subWeapon->getDmgType() < 4 &&
                     !weapon->isHandToHand())
                 {
                     delay /= 2;

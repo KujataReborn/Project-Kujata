@@ -982,7 +982,7 @@ tpz.regime.clearRegimeVars = function(player)
     player:setCharVar("[regime]zone", 0)
     player:setCharVar("[regime]id", 0)
     player:setCharVar("[regime]repeat", 0)
-    player:setCharVar("[regime]lastReward", 0)
+    -- player:setCharVar("[regime]lastReward", 0)
 
     for i = 1, 4 do
         player:setCharVar("[regime]needed" .. i, 0)
@@ -1222,6 +1222,12 @@ end
 
 tpz.regime.checkRegime = function(player, mob, regimeId, index, regimeType)
 
+    -- award gil and tabs once per day, or at every page completion if REGIME_WAIT is 0 in settings.lua
+    local vanadielEpoch = vanaDay()
+    if REGIME_WAIT == 1 and player:getCharVar("[regime]lastReward") == vanadielEpoch then
+		return
+	end
+
     -- dead players, or players not on this training regime, get no credit
     if not player or player:getHP() == 0 or player:getCharVar("[regime]id") ~= regimeId then
         return
@@ -1355,24 +1361,20 @@ tpz.regime.checkRegime = function(player, mob, regimeId, index, regimeType)
     end
     -- done with prowess buffs
 
-    -- award gil and tabs once per day, or at every page completion if REGIME_WAIT is 0 in settings.lua
-    local vanadielEpoch = vanaDay()
-    if REGIME_WAIT == 0 or player:getCharVar("[regime]lastReward") < vanadielEpoch then
-        -- gil
-        player:addGil(reward)
-        player:messageBasic(tpz.msg.basic.FOV_OBTAINS_GIL, reward)
+	-- gil
+	player:addGil(reward)
+	player:messageBasic(tpz.msg.basic.FOV_OBTAINS_GIL, reward)
 
-        -- tabs
-        local tabs = math.floor(reward / 10) * TABS_RATE
-        tabs = utils.clamp(tabs, 0, 50000 - player:getCurrency("valor_point")) -- Retail caps players at 50000 tabs
-        player:addCurrency("valor_point", tabs)
-        player:messageBasic(tpz.msg.basic.FOV_OBTAINS_TABS, tabs, player:getCurrency("valor_point"))
+	-- tabs
+	local tabs = math.floor(reward / 10) * TABS_RATE
+	tabs = utils.clamp(tabs, 0, 50000 - player:getCurrency("valor_point")) -- Retail caps players at 50000 tabs
+	player:addCurrency("valor_point", tabs)
+	player:messageBasic(tpz.msg.basic.FOV_OBTAINS_TABS, tabs, player:getCurrency("valor_point"))
+	
+	-- award XP every page completion
+	player:addExp(reward)
 
-        player:setCharVar("[regime]lastReward", vanadielEpoch)
-    end
-
-    -- award XP every page completion
-    player:addExp(reward)
+	player:setCharVar("[regime]lastReward", vanadielEpoch)
 
     -- repeating regimes
     if player:getCharVar("[regime]repeat") == 1 then

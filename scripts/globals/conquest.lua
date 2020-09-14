@@ -1081,7 +1081,7 @@ tpz.conquest.overseerOnEventFinish = function(player, csid, option, guardNation,
 
     -- SIGNET
     if option == 1 then
-        local duration = (pRank + getNationRank(pNation) + 3) * 3600
+        local duration = (pRank + getNationRank(pNation)) * 3600
         player:delStatusEffectsByFlag(tpz.effectFlag.INFLUENCE, true)
         player:addStatusEffect(tpz.effect.SIGNET, 0, 0, duration)
         player:messageSpecial(mOffset + 1) -- "You've received your nation's Signet!"
