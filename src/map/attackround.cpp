@@ -49,6 +49,9 @@ CAttackRound::CAttackRound(CBattleEntity* attacker, CBattleEntity* defender)
     // Grab a trick attack assistant.
     m_taEntity = battleutils::getAvailableTrickAttackChar(attacker, attacker->GetBattleTarget());
 
+    // Get cover partner
+    m_coverAbilityUserEntity = battleutils::GetCoverAbilityUser(attacker->GetBattleTarget(), attacker);
+
     // Build Footwork attacks.
     if (m_attacker->StatusEffectContainer->HasStatusEffect(EFFECT_FOOTWORK) && IsH2H())
     {
@@ -164,6 +167,16 @@ bool CAttackRound::GetSATAOccured()
 CBattleEntity*	CAttackRound::GetTAEntity()
 {
     return m_taEntity;
+}
+
+/************************************************************************
+*                                                                       *
+*  Returns the Cover entity.                                            *
+*                                                                       *
+************************************************************************/
+CBattleEntity* CAttackRound::GetCoverAbilityUserEntity()
+{
+    return m_coverAbilityUserEntity;
 }
 
 /************************************************************************
