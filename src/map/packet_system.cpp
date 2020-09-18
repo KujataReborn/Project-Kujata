@@ -1342,14 +1342,32 @@ void SmallPacket0x036(map_session_data_t* session, CCharEntity* PChar, CBasicPac
 
         for (int32 slotID = 0; slotID < numItems; ++slotID)
         {
-            uint8  invSlotID = data.ref<uint8>(0x30 + slotID);
+            uint8 invSlotID = data.ref<uint8>(0x30 + slotID);
             uint32 Quantity = data.ref<uint32>(0x08 + slotID * 4);
 
             CItem* PItem = PChar->getStorage(LOC_INVENTORY)->GetItem(invSlotID);
 
-            if (PItem != nullptr && PItem->getQuantity() >= Quantity)
+            if ((PItem == nullptr) || (PItem->isSubType(ITEM_LOCKED)) || (PItem->getQuantity() < Quantity))
+            {
+                ShowError(CL_RED "SmallPacket0x036: Player %s trying to trade invalid item [to NPC]! \n" CL_RESET, PChar->GetName());
+
+                // Make sure we unlock all the items before we abort
+                for (int32 cleanID = 0; cleanID < slotID; ++cleanID)
+                {
+                    invSlotID = data.ref<uint8>(0x30 + cleanID);
+                    PItem = PChar->getStorage(LOC_INVENTORY)->GetItem(invSlotID);
+
+                    if (PItem != nullptr)
+                    {
+                        PItem->setSubType(ITEM_UNLOCKED);
+                    }
+                }
+                return;
+            }
+            else
             {
                 PChar->TradeContainer->setItem(slotID, PItem->getID(), invSlotID, Quantity, PItem);
+                PItem->setSubType(ITEM_LOCKED);
             }
         }
 
