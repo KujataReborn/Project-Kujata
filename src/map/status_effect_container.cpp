@@ -1180,13 +1180,13 @@ CStatusEffect* CStatusEffectContainer::GetStatusEffect(EFFECT StatusID, uint32 S
 
 CStatusEffect* CStatusEffectContainer::GetStatusEffectByTier(EFFECT StatusID, uint16 tier)
 {
-    for (uint16 i = 0; i < m_StatusEffectList.size(); ++i)
+    for (CStatusEffect* PStatusEffect : m_StatusEffectSet)
     {
-        if (m_StatusEffectList.at(i)->GetStatusID() == StatusID &&
-            m_StatusEffectList.at(i)->GetTier() == tier &&
-            !m_StatusEffectList.at(i)->deleted)
+        if (PStatusEffect->GetStatusID() == StatusID &&
+            PStatusEffect->GetTier() == tier &&
+            !PStatusEffect->deleted)
         {
-            return m_StatusEffectList[i];
+            return PStatusEffect;
         }
     }
 
