@@ -1262,22 +1262,22 @@ namespace petutils
 
         if (id >= 0 && id <= 7) // Elemental spirits
         {
-            if      (level <  4) cost =  2;
-            else if (level <  8) cost =  3;
-            else if (level < 13) cost =  4;
-            else if (level < 17) cost =  5;
-            else if (level < 22) cost =  6;
-            else if (level < 26) cost =  7;
-            else if (level < 31) cost =  8;
-            else if (level < 35) cost =  9;
-            else if (level < 39) cost = 10;
-            else if (level < 46) cost = 11;
-            else if (level < 48) cost = 12;
-            else if (level < 53) cost = 13;
-            else if (level < 57) cost = 14;
-            else if (level < 62) cost = 15;
-            else if (level < 66) cost = 16;
-            else if (level < 71) cost = 17;
+            if      (level <  5) cost =  2;
+            else if (level <  9) cost =  3;
+            else if (level < 14) cost =  4;
+            else if (level < 18) cost =  5;
+            else if (level < 23) cost =  6;
+            else if (level < 27) cost =  7;
+            else if (level < 32) cost =  8;
+            else if (level < 36) cost =  9;
+            else if (level < 40) cost = 10;
+            else if (level < 45) cost = 11;
+            else if (level < 49) cost = 12;
+            else if (level < 54) cost = 13;
+            else if (level < 58) cost = 14;
+            else if (level < 63) cost = 15;
+            else if (level < 67) cost = 16;
+            else if (level < 72) cost = 17;
             else                 cost = 18;
         }
         else if (id == 8 || id == 20) // Carbuncle and Cait Sith
