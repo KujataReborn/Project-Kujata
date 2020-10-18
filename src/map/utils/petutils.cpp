@@ -1259,105 +1259,66 @@ namespace petutils
     int16 PerpetuationCost(uint32 id, uint8 level)
     {
         int16 cost = 0;
-        if (id >= 0 && id <= 7)
+
+        if (id >= 0 && id <= 7) // Elemental spirits
         {
-            if (level < 19)
-                cost = 1;
-            else if (level < 38)
-                cost = 2;
-            else if (level < 57)
-                cost = 3;
-            else if (level < 75)
-                cost = 4;
-            else if (level < 81)
-                cost = 5;
-            else if (level < 91)
-                cost = 6;
-            else
-                cost = 7;
+            if      (level <  5) cost =  2;
+            else if (level <  9) cost =  3;
+            else if (level < 14) cost =  4;
+            else if (level < 18) cost =  5;
+            else if (level < 23) cost =  6;
+            else if (level < 27) cost =  7;
+            else if (level < 32) cost =  8;
+            else if (level < 36) cost =  9;
+            else if (level < 40) cost = 10;
+            else if (level < 45) cost = 11;
+            else if (level < 49) cost = 12;
+            else if (level < 54) cost = 13;
+            else if (level < 58) cost = 14;
+            else if (level < 63) cost = 15;
+            else if (level < 67) cost = 16;
+            else if (level < 72) cost = 17;
+            else                 cost = 18;
         }
-        else if (id == 8)
+        else if (id == 8 || id == 20) // Carbuncle and Cait Sith
         {
-            if (level < 10)
-                cost = 1;
-            else if (level < 18)
-                cost = 2;
-            else if (level < 27)
-                cost = 3;
-            else if (level < 36)
-                cost = 4;
-            else if (level < 45)
-                cost = 5;
-            else if (level < 54)
-                cost = 6;
-            else if (level < 63)
-                cost = 7;
-            else if (level < 72)
-                cost = 8;
-            else if (level < 81)
-                cost = 9;
-            else if (level < 91)
-                cost = 10;
-            else
-                cost = 11;
+            if      (level <  9) cost = 1;
+            else if (level < 18) cost = 2;
+            else if (level < 27) cost = 3;
+            else if (level < 36) cost = 4;
+            else if (level < 45) cost = 5;
+            else if (level < 54) cost = 6;
+            else if (level < 63) cost = 7;
+            else if (level < 72) cost = 8;
+            else                 cost = 9;
         }
-        else if (id == 9)
+        else if (id == 9) // Fenrir
         {
-            if (level < 8)
-                cost = 1;
-            else if (level < 15)
-                cost = 2;
-            else if (level < 22)
-                cost = 3;
-            else if (level < 30)
-                cost = 4;
-            else if (level < 37)
-                cost = 5;
-            else if (level < 45)
-                cost = 6;
-            else if (level < 51)
-                cost = 7;
-            else if (level < 59)
-                cost = 8;
-            else if (level < 66)
-                cost = 9;
-            else if (level < 73)
-                cost = 10;
-            else if (level < 81)
-                cost = 11;
-            else if (level < 91)
-                cost = 12;
-            else
-                cost = 13;
+            if      (level <  8) cost =  1;
+            else if (level < 15) cost =  2;
+            else if (level < 22) cost =  3;
+            else if (level < 30) cost =  4;
+            else if (level < 37) cost =  5;
+            else if (level < 45) cost =  6;
+            else if (level < 51) cost =  7;
+            else if (level < 59) cost =  8;
+            else if (level < 66) cost =  9;
+            else if (level < 73) cost = 10;
+            else                 cost = 11;
         }
-        else if (id <= 16)
+        else if (id <= 16) // Diabolos and other Avatars
         {
-            if (level < 10)
-                cost = 3;
-            else if (level < 19)
-                cost = 4;
-            else if (level < 28)
-                cost = 5;
-            else if (level < 38)
-                cost = 6;
-            else if (level < 47)
-                cost = 7;
-            else if (level < 56)
-                cost = 8;
-            else if (level < 65)
-                cost = 9;
-            else if (level < 68)
-                cost = 10;
-            else if (level < 71)
-                cost = 11;
-            else if (level < 74)
-                cost = 12;
-            else if (level < 81)
-                cost = 13;
-            else if (level < 91)
-                cost = 14;
-            else
-                cost = 15;
+            if      (level < 10) cost =  3;
+            else if (level < 19) cost =  4;
+            else if (level < 28) cost =  5;
+            else if (level < 38) cost =  6;
+            else if (level < 47) cost =  7;
+            else if (level < 56) cost =  8;
+            else if (level < 65) cost =  9;
+            else if (level < 68) cost = 10;
+            else if (level < 71) cost = 11;
+            else if (level < 74) cost = 12;
+            else                 cost = 13;
         }
 
         return cost;
