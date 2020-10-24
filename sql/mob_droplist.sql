@@ -2064,10 +2064,12 @@ INSERT INTO `mob_droplist` VALUES (356,0,0,1000,3226,100);
 INSERT INTO `mob_droplist` VALUES (356,0,0,1000,3228,100);
 INSERT INTO `mob_droplist` VALUES (356,0,0,1000,11519,1000);
 INSERT INTO `mob_droplist` VALUES (356,0,0,1000,16379,490);
-INSERT INTO `mob_droplist` VALUES (357,2,0,1000,17622,0); -- (Brigandish Blade) buccaneers_knife (steal)
-INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1420,1000); -- (Brigandish Blade) gem_of_the_south
-INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1420,300); -- (Brigandish Blade) gem_of_the_south #2
-INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1441,200); -- (Brigandish Blade) lib._abjuration
+-- Brigandish Blade (Ve' Lugannon Palace)
+INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1420,1000);          -- Gem of the South
+INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1420,240);           -- Gem of the South #2
+INSERT INTO `mob_droplist` VALUES (357,0,0,1000,1441,240);           -- Libation Abjuration
+INSERT INTO `mob_droplist` VALUES (357,2,0,1000,17622,0);            -- [Steal] Buccaneer's Knife
+--
 INSERT INTO `mob_droplist` VALUES (358,0,0,1000,15468,440);
 INSERT INTO `mob_droplist` VALUES (359,0,0,1000,1620,60);
 INSERT INTO `mob_droplist` VALUES (359,0,0,1000,1621,80);
