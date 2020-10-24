@@ -6,14 +6,35 @@ require("scripts/globals/status")
 -----------------------------------
 
 function onMobInitialize(mob)
+    mob:setMobMod(tpz.mobMod.NO_MOVE, 1)
     mob:setMobMod(tpz.mobMod.SIGHT_RANGE, 30)
 end
 
 function onMobSpawn(mob)
+    mob:addMod(tpz.mod.MOVE, 100)
+end
+
+function onMobSpawn(mob)
+    mob:setLocalVar("Switch", 1)
+    mob:setLocalVar("SwitchTimer", 0)
     mob:setLocalVar("TyphoonNext", 0)
     mob:setLocalVar("TyphoonCasts", 2)
 end
 
+function onMobRoam(mob)
+    if os.time() > mob:getLocalVar("SwitchTimer") then
+        if mob:getLocalVar("Switch") ==  1 then
+            mob:setPos(740, -0.463, -100, 0)
+            mob:setLocalVar("Switch", 0)
+        else
+            mob:setPos(740, -0.463, -100, 180)
+            mob:setLocalVar("Switch", 1)
+        end
+
+        mob:setLocalVar("SwitchTimer", os.time() + 10)
+    end
+end
+ 
 function onMobEngaged(mob)
     mob:setMobMod(tpz.mobMod.NO_MOVE, 0)
 end
