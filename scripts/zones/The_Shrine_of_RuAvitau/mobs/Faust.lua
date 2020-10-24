@@ -3,6 +3,12 @@
 --  Mob: Faust
 -----------------------------------
 -- TODO: Faust should WS ~3 times in a row each time.
+require("scripts/globals/status")
+-----------------------------------
+
+function onMobInitialize(mob)
+    mob:setMobMod(tpz.mobMod.SIGHT_RANGE, 30)
+end
 
 function onMobDeath(mob, player, isKiller)
 end
