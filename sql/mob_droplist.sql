@@ -3430,10 +3430,12 @@ INSERT INTO `mob_droplist` VALUES (636,0,0,1000,643,800);
 INSERT INTO `mob_droplist` VALUES (636,2,0,1000,768,0);
 INSERT INTO `mob_droplist` VALUES (636,0,0,1000,768,30);
 INSERT INTO `mob_droplist` VALUES (637,0,0,1000,11531,164); -- (Desmodont) fidelity_mantle
-INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1422,1000); -- (Despot) gem_of_the_west
-INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1422,300); -- (Despot) gem_of_the_west #2
-INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1442,340); -- (Despot) obl._abjuration
-INSERT INTO `mob_droplist` VALUES (638,0,0,1000,18044,150); -- (Despot) scarecrow_scythe
+-- Despot (Ru'aun Gardens) ------------------------------------------------------------------------
+INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1422,1000);          -- Gem of the West
+INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1422,240);           -- Gem of the West #2
+INSERT INTO `mob_droplist` VALUES (638,0,0,1000,1442,150);           -- Oblation Abjuration
+INSERT INTO `mob_droplist` VALUES (638,0,0,1000,18044,100);          -- Scarecrow Scythe
+-- ------------------------------------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (639,0,0,1000,1060,60);
 INSERT INTO `mob_droplist` VALUES (640,0,0,1000,816,70);
 INSERT INTO `mob_droplist` VALUES (640,4,0,1000,839,0);
@@ -12094,13 +12096,13 @@ INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,889,0);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,894,60);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,906,110);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,1057,30);
--- Steam Cleaner (Ve'Lugannon Palace)
+-- Steam Cleaner (Ve'Lugannon Palace) -------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,1000);         -- Gem of the East
 INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,240);          -- Gem of the East #2
 INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1441,150);          -- Libation Abjuration
 INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1445,50);           -- Freya's Tear
 INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,17511,100);         -- Indra Katars
---
+-- ------------------------------------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2327,0,0,1000,926,270);
 INSERT INTO `mob_droplist` VALUES (2327,0,0,1000,1028,70);
 INSERT INTO `mob_droplist` VALUES (2327,2,0,1000,4362,0);
@@ -15213,12 +15215,12 @@ INSERT INTO `mob_droplist` VALUES (2798,0,0,1000,15873,20);
 INSERT INTO `mob_droplist` VALUES (2798,0,0,1000,15876,20);
 INSERT INTO `mob_droplist` VALUES (2799,0,0,1000,15896,100);
 INSERT INTO `mob_droplist` VALUES (2799,0,0,1000,18390,100);
--- Zipacna (Ve'Lugannon Palace)
+-- Zipacna (Ve'Lugannon Palace) -------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2800,0,0,1000,1424,1000);         -- Gem of the North
 INSERT INTO `mob_droplist` VALUES (2800,0,0,1000,1424,240);          -- Gem of the North #2
 INSERT INTO `mob_droplist` VALUES (2800,0,0,1000,1442,150);          -- Oblation Abjuration
 INSERT INTO `mob_droplist` VALUES (2800,0,0,1000,17804,100);         -- Ushikikimaru
---
+-- ------------------------------------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2801,0,0,1000,14807,370);
 INSERT INTO `mob_droplist` VALUES (2802,2,0,1000,751,0);
 INSERT INTO `mob_droplist` VALUES (2802,0,0,1000,2525,20);
@@ -15304,23 +15306,23 @@ INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,1000); -- (Mother Globe) s
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,300); -- (Mother Globe) springstone #2
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1441,200); -- (Mother Globe) lib._abjuration
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,17774,125); -- (Mother Globe) shiranui
--- Faust (The Shrirene of Ru'Avitau)
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,1000);              -- Summerstone
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,240);               -- Summerstone #2
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1442,150);               -- Oblation Abjuration
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,16838,100);              -- Tonbo Giri
---
+-- Faust (The Shrirene of Ru'Avitau) --------------------------------------------------------------
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,1000);         -- Summerstone
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,240);          -- Summerstone #2
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1442,150);          -- Oblation Abjuration
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,16838,100);         -- Tonbo Giri
+-- ------------------------------------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,1000); -- (Ullikummi) autumnstone
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,300); -- (Ullikummi) autumnstone #2
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1442,200); -- (Ullikummi) obl._abjuration
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,18199,125); -- (Ullikummi) ulfhedinn_axe
 -- Olla Grande (The Shrine of Ru'Avitau) ----------------------------------------------------------
-INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,1000);              -- Winterstone
-INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,240);               -- Winterstone #2
-INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1441,150);               -- Libation Abjuration
-INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1445,50);                -- Freya's Tear
-INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,16956,100);              -- Skofnung
---
+INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,1000);         -- Winterstone
+INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,240);          -- Winterstone #2
+INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1441,150);          -- Libation Abjuration
+INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1445,50);           -- Freya's Tear
+INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,16956,100);         -- Skofnung
+-- ------------------------------------------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2824,0,0,1000,644,250);
 INSERT INTO `mob_droplist` VALUES (2824,0,0,1000,955,70);
 INSERT INTO `mob_droplist` VALUES (2824,0,0,1000,955,70);
