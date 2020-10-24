@@ -37,6 +37,8 @@ end
  
 function onMobEngaged(mob)
     mob:setMobMod(tpz.mobMod.NO_MOVE, 0)
+
+    mob:setLocalVar("TyphoonNext", os.time() + 4)
 end
 
 function onMobFight(mob)
