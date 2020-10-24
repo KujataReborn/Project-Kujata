@@ -90,6 +90,8 @@ function onMobInitialize(mob)
 end
 
 function onMobSpawn(mob)
+    mob:setMod(tpz.mod.REGAIN, 100)
+
     onMobRoam(mob)
 end
 
