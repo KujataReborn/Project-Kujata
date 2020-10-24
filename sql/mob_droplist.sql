@@ -15304,10 +15304,12 @@ INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,1000); -- (Mother Globe) s
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,300); -- (Mother Globe) springstone #2
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1441,200); -- (Mother Globe) lib._abjuration
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,17774,125); -- (Mother Globe) shiranui
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,1000); -- (Faust) summerstone
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,300); -- (Faust) summerstone #2
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1442,200); -- (Faust) obl._abjuration
-INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,16838,125); -- (Faust) tonbo_giri
+-- Faust (The Shrirene of Ru'Avitau)
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,1000);              -- Summerstone
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,240);               -- Summerstone #2
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1442,150);               -- Oblation Abjuration
+INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,16838,100);              -- Tonbo Giri
+--
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,1000); -- (Ullikummi) autumnstone
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,300); -- (Ullikummi) autumnstone #2
 INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1442,200); -- (Ullikummi) obl._abjuration
