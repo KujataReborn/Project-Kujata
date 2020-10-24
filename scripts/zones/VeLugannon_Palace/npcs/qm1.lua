@@ -4,42 +4,37 @@
 -- !pos -370.039 16.014 -274.378 177
 -----------------------------------
 local ID = require("scripts/zones/VeLugannon_Palace/IDs")
+require("scripts/globals/npc_util")
 -----------------------------------
 
 function onTrade(player, npc, trade)
 end
 
 function onTrigger(player, npc)
-
-    if (player:hasItem(16575) == false and player:getFreeSlotsCount() >= 1) then
-        player:addItem(16575)
-        player:messageSpecial(ID.text.ITEM_OBTAINED, 16575) -- Curtana
-
-        -- ??? dissapears for 2 hours and reappears on new position
-        local hideTime = 7200
+    if
+        not player:hasItem(16575) and -- Curtana
+        npcUtil.giveItem(player, 16575)
+    then
+        npc:hideNPC(7200) -- 2h
     else
-        player:messageSpecial(ID.text.ITEM_CANNOT_BE_OBTAINED, 16575) -- Curtana
-
-        -- ??? just change position
-        local hideTime = 1
+        npc:hideNPC(10) -- 10s
     end
 
-    local randpos = math.random(1, 8)
-
-    switch (randpos): caseof
+    local curtanaQMlocations =
     {
-        [1] = function (x) npc:setPos(-370.039, 16.014, -274.378); end,
-        [2] = function (x) npc:setPos(-389, 16, -274); end,
-        [3] = function (x) npc:setPos(-434, 16, -229); end,
-        [4] = function (x) npc:setPos(-434, 16, -210); end,
-        [5] = function (x) npc:setPos(434, 13, -210); end,
-        [6] = function (x) npc:setPos(434, 16, -230); end,
-        [7] = function (x) npc:setPos(390, 16, -194); end,
-        [8] = function (x) npc:setPos(370, 16, -194); end,
+        {-370, 16, -274},
+        {-389, 16, -274},
+        {-434, 16, -229},
+        {-434, 16, -210},
+        { 434, 13, -210},
+        { 434, 16, -230},
+        { 390, 16, -194},
+        { 370, 16, -194},
     }
 
-    npc:hideNPC(hideTime)
+    local newPosition = npcUtil.pickNewPosition(npc:getID(), curtanaQMLocations, true)
 
+    npc:setPos(newPosition.x, newPosition.y, newPosition.z)
 end
 
 function onEventUpdate(player, csid, option)
