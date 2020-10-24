@@ -85,7 +85,14 @@ local path =
     -202, 0, 391,
 }
 
+function onMobInitialize(mob)
+    mob:setMobMod(tpz.mobMod.SIGHT_RANGE, 30)
+end
+
 function onMobSpawn(mob)
+    mob:setMod(tpz.mod.REGAIN, 100)
+    mob:addMod(tpz.mod.MOVE, 12)
+
     onMobRoam(mob)
 end
 
@@ -95,7 +102,7 @@ end
 
 function onMobRoam(mob)
     -- move to start position if not moving
-    if (mob:isFollowingPath() == false) then
+    if not mob:isFollowingPath() then
         mob:pathThrough(tpz.path.first(path), tpz.path.flag.RUN)
     end
 end
