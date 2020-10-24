@@ -12092,11 +12092,13 @@ INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,889,0);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,894,60);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,906,110);
 INSERT INTO `mob_droplist` VALUES (2325,0,0,1000,1057,30);
-INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,1000); -- (Steam Cleaner) gem_of_the_east
-INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,300); -- (Steam Cleaner) gem_of_the_east #2
-INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1441,350); -- (Steam Cleaner) lib._abjuration
-INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1445,50); -- (Steam Cleaner) freyas_tear
-INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,17511,125); -- (Steam Cleaner) indra_katars
+-- Steam Cleaner (Ve'Lugannon Palace)
+INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,1000);         -- Gem of the East
+INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1418,240);          -- Gem of the East #2
+INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1441,150);          -- Libation Abjuration
+INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,1445,50);           -- Freya's Tear
+INSERT INTO `mob_droplist` VALUES (2326,0,0,1000,17511,100);         -- Indra Katars
+--
 INSERT INTO `mob_droplist` VALUES (2327,0,0,1000,926,270);
 INSERT INTO `mob_droplist` VALUES (2327,0,0,1000,1028,70);
 INSERT INTO `mob_droplist` VALUES (2327,2,0,1000,4362,0);
