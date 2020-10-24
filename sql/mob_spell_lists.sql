@@ -3930,6 +3930,9 @@ INSERT INTO `mob_spell_lists` VALUES ('Olla_Grande',802,40,1,255);        -- Ban
 INSERT INTO `mob_spell_lists` VALUES ('Olla_Grande',802,53,1,255);        -- Blink
 INSERT INTO `mob_spell_lists` VALUES ('Olla_Grande',802,54,1,255);        -- Stoneskin
 INSERT INTO `mob_spell_lists` VALUES ('Olla_Grande',802,112,1,255);       -- Flash
+INSERT INTO `mob_spell_lists` VALUES ('Ullikummi',803,34,1,255);          -- Diaga II
+INSERT INTO `mob_spell_lists` VALUES ('Ullikummi',803,40,1,255);          -- Banishga III
+INSERT INTO `mob_spell_lists` VALUES ('Ullikummi',803,112,1,255);         -- Flash
 
 /*!40000 ALTER TABLE `mob_spell_lists` ENABLE KEYS */;
 UNLOCK TABLES;

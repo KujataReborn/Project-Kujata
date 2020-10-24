@@ -3620,3 +3620,8 @@ INSERT INTO `mob_skill_lists` VALUES ('Atori-Tutori_qm',1145,10); -- Final Heave
 INSERT INTO `mob_skill_lists` VALUES ('Atori-Tutori_qm',1145,11); -- Ascetics Fury
 INSERT INTO `mob_skill_lists` VALUES ('Atori-Tutori_qm',1145,14); -- Victory Smite
 -- Next available ID: 1146
+
+-- ------------------------------------------------------------------------------------------------
+-- Kujata Customs ---------------------------------------------------------------------------------
+
+INSERT INTO `mob_skill_lists` VALUES ('Ullikummi',2000,675);              -- Heavy Strike

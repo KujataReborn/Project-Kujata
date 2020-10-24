@@ -15306,16 +15306,16 @@ INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,1000); -- (Mother Globe) s
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1419,300); -- (Mother Globe) springstone #2
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,1441,200); -- (Mother Globe) lib._abjuration
 INSERT INTO `mob_droplist` VALUES (2820,0,0,1000,17774,125); -- (Mother Globe) shiranui
--- Faust (The Shrirene of Ru'Avitau) --------------------------------------------------------------
+-- Faust (The Shrine of Ru'Avitau) ----------------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,1000);         -- Summerstone
 INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1421,240);          -- Summerstone #2
 INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,1442,150);          -- Oblation Abjuration
 INSERT INTO `mob_droplist` VALUES (2821,0,0,1000,16838,100);         -- Tonbo Giri
--- ------------------------------------------------------------------------------------------------
-INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,1000); -- (Ullikummi) autumnstone
-INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,300); -- (Ullikummi) autumnstone #2
-INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1442,200); -- (Ullikummi) obl._abjuration
-INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,18199,125); -- (Ullikummi) ulfhedinn_axe
+-- Ullikummi (The Shrine of Ru'Avitau) ------------------------------------------------------------
+INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,1000);         -- Autumnstone
+INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1423,240);          -- Autumnstone #2
+INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,1442,150);          -- Oblation Abjuration
+INSERT INTO `mob_droplist` VALUES (2822,0,0,1000,18199,100);         -- Ulfhedinn Axe
 -- Olla Grande (The Shrine of Ru'Avitau) ----------------------------------------------------------
 INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,1000);         -- Winterstone
 INSERT INTO `mob_droplist` VALUES (2823,0,0,1000,1425,240);          -- Winterstone #2
