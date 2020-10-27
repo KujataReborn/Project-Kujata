@@ -5643,6 +5643,11 @@ void SmallPacket0x0FB(map_session_data_t* session, CCharEntity* PChar, CBasicPac
 
 void SmallPacket0x0FC(map_session_data_t* session, CCharEntity* PChar, CBasicPacket data)
 {
+    if (PChar->jobs.genkai <= 50)
+    {
+        return;
+    }
+
     uint16 potItemID = data.ref<uint16>(0x04);
     uint16 itemID = data.ref<uint16>(0x06);
 
