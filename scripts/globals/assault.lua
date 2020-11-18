@@ -67,6 +67,16 @@ tpz.assault.missions =
     NYZUL_ISLE_UNCHARTED_AREA_SURVEY  = 52,
 }
 
+tpz.assault.info =
+{
+    [tpz.assault.missions.IMPERIAL_AGENT_RESCUE] = {suggestedLevel = 60, minimumPoints = 1100}
+}
+
+tpz.assault.instance =
+{
+    [tpz.zone.BHAFLAU_THICKETS] = tpz.zone.MAMOOL_JA_TRAINING_GROUNDS
+}
+
 -- ------------------------------------------------------------------------------------------------
 -- Stagging Point Sentries (aka Armband NPCs)
 
@@ -125,6 +135,120 @@ tpz.assault.armband.onEventFinish = function(player, csid, option, csid1, csid2,
     elseif csid == csid3 and option == 1 then
         npcUtil.giveKeyItem(player, tpz.keyItem.ASSAULT_ARMBAND)
         player:delCurrency("imperial_standing", 50)
+    end
+end
+
+-- ------------------------------------------------------------------------------------------------
+-- Runic Seals
+
+tpz.assault.runicSeal = {}
+
+tpz.assault.runicSeal.onTrigger = function(player, npc, csid, orders, index)
+    if player:hasKeyItem(orders) and player:getCharVar("assaultEntered") == 0 then
+        local assaultID = player:getCurrentAssault()
+        local level = tpz.assault.info[assaultID].suggestedLevel
+        local armband = 0
+
+        if player:hasKeyItem(tpz.keyItem.ASSAULT_ARMBAND) then
+            armband = 1
+        end
+
+        player:startEvent(csid, assaultID, -4, 0, level, index, armband)
+    else
+        player:messageText(player, zones[player:getZoneID()].text.NOTHING_HAPPENS)
+    end
+end
+
+tpz.assault.runicSeal.onEventUpdate = function(player, csid, option, target, orders)
+    if player:getGMLevel() == 0 and player:getPartySize() < 3 then
+        player:messageSpecial(zones[player:getZoneID()].text.PARTY_MIN_REQS, 3)
+        player:instanceEntry(target, 1)
+
+        return
+    elseif player:checkSoloPartyAlliance() == 2 then
+        player:messageText(player, zones[player:getZoneID()].text.MEMBER_NO_REQS + 1, false)
+        player:instanceEntry(target, 1)
+
+        return
+    end
+
+    local cap = bit.band(option, 0x03)
+
+    if     cap == 0 then cap = 0
+    elseif cap == 1 then cap = 70
+    elseif cap == 2 then cap = 60
+    else                 cap = 50
+    end
+
+    player:setCharVar("AssaultCap", cap)
+
+    local assaultID = player:getCurrentAssault()
+
+    local party = player:getParty()
+
+    if party then
+        for _, member in ipairs(party) do
+            if
+                not member:hasKeyItem(orders) or
+                member:getCurrentAssault() ~= assaultID or
+                member:getCharVar("assaultEntered") ~= 0 or
+                member:getMainLvl() < 50
+            then
+                player:messageText(player, zones[player:getZoneID()].text.MEMBER_NO_REQS, false)
+                player:instanceEntry(target, 1)
+
+                return
+            elseif
+                member:getZoneID() ~= player:getZoneID() or
+                member:checkDistance(player) > 50
+            then
+                player:messageText(player, zones[player:getZoneID()].text.MEMBER_TOO_FAR, false)
+                player:instanceEntry(target, 1)
+                
+                return
+            end
+        end
+    end
+
+    player:createInstance(assaultID, tpz.assault.instance[player:getZoneID()])
+end
+
+tpz.assault.runicSeal.onEventFinish = function(player, csid, option, assaultCs, assaultOpt)
+    if csid == assaultCs and option == assaultOpt then
+        player:setPos(0, 0, 0, 0, tpz.assault.instance[player:getZoneID()])
+    end
+end
+
+tpz.assault.runicSeal.onInstanceCreated = function(player, target, instance, csid)
+    
+    if instance then
+        instance:setLevelCap(player:getCharVar("AssaultCap"))
+        player:setCharVar("AssaultCap", 0)
+
+        player:setCharVar("assaultEntered", 99)
+        player:setInstance(instance)
+        player:instanceEntry(target, 4)
+
+        player:setCharVar("Assault_Armband", 1)
+        player:delKeyItem(tpz.keyItem.ASSAULT_ARMBAND)
+
+        local party = player:getParty()
+
+        if party then
+            for _,member in ipairs(party) do
+                if
+                    member:getID() ~= player:getID() and
+                    member:getZoneID() == player:getZoneID()
+                then
+                    member:setCharVar("assaultEntered", 99)
+                    member:setInstance(instance)
+                    member:startEvent(csid)
+                end
+            end
+        end
+    else
+        player:messageText(player, zones[player:getZoneID()].text.CANNOT_ENTER, false)
+        player:instanceEntry(target, 3)
     end
 end
 
