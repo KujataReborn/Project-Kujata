@@ -59,6 +59,35 @@ INSERT INTO `instance_entities` VALUES (1,17060138);
 INSERT INTO `instance_entities` VALUES (1,17060146);
 INSERT INTO `instance_entities` VALUES (1,17060147);
 
+-- [11] Imperial Agent Rescue -----------------------------
+
+-- Mobs
+INSERT INTO `instance_entities` VALUES (11, 17047553); -- Mamool Ja Warder (WHM)
+INSERT INTO `instance_entities` VALUES (11, 17047554); -- Mamool Ja Warder (BST)
+INSERT INTO `instance_entities` VALUES (11, 17047555); -- Mamool Ja's Lizard
+INSERT INTO `instance_entities` VALUES (11, 17047556); -- Mamool Ja Warder (WHM)
+INSERT INTO `instance_entities` VALUES (11, 17047557); -- Mamool Ja Warder (BST)
+INSERT INTO `instance_entities` VALUES (11, 17047558); -- Mamool Ja's Lizard
+INSERT INTO `instance_entities` VALUES (11, 17047559); -- Mamool Ja Warder (WHM)
+INSERT INTO `instance_entities` VALUES (11, 17047560); -- Mamool Ja Warder (WHM)
+INSERT INTO `instance_entities` VALUES (11, 17047561); -- Mamool Ja Warder (BST)
+INSERT INTO `instance_entities` VALUES (11, 17047562); -- Mamool Ja's Lizard
+INSERT INTO `instance_entities` VALUES (11, 17047563); -- Mamool Ja Warder (NIN)
+INSERT INTO `instance_entities` VALUES (11, 17047564); -- Mamool Ja Warder (NIN)
+INSERT INTO `instance_entities` VALUES (11, 17047565); -- Mamool Ja Warder (NIN)
+INSERT INTO `instance_entities` VALUES (11, 17047566); -- Mamool Ja Warder (NIN)
+INSERT INTO `instance_entities` VALUES (11, 17047567); -- Dilapidated Gate
+INSERT INTO `instance_entities` VALUES (11, 17047568); -- Dilapidated Gate
+INSERT INTO `instance_entities` VALUES (11, 17047569); -- Dilapidated Gate
+
+-- Npcs
+INSERT INTO `instance_entities` VALUES (11, 17047808); -- Ancient Lockbox
+INSERT INTO `instance_entities` VALUES (11, 17047809); -- Rune of Release
+INSERT INTO `instance_entities` VALUES (11, 17047810); -- Brujeel
+INSERT INTO `instance_entities` VALUES (11, 17047916); -- Pot Hatch (_jul)
+INSERT INTO `instance_entities` VALUES (11, 17047917); -- Pot Hatch (_jum)
+INSERT INTO `instance_entities` VALUES (11, 17047918); -- Pot Hatch (_jun)
+
 -- Preemtive Strike
 -- Mobs
 INSERT INTO `instance_entities` VALUES (12, 17047570);

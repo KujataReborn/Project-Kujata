@@ -348,3 +348,81 @@ tpz.assault.instance.onEventFinish = function(player, csid, finishCs, zone)
     end
 end
 
+-- ------------------------------------------------------------------------------------------------
+-- Chests
+
+tpz.assault.chest = {}
+
+tpz.assault.chest.onTrigger = function(player, npc, loot, text)
+    local instance = player:getInstance()
+    local chars = instance:getChars()
+
+    if instance:completed() and npc:getLocalVar("open") == 0 then
+        if player:getFreeSlotsCount() == 0 then
+            player:messageSpecial(text.ITEM_CANNOT_BE_OBTAINED + 1)
+        else
+            npc:entityAnimationPacket("open")
+            npc:setLocalVar("open", 1)
+            npc:timer(15000, function(npc) npc:entityAnimationPacket("kesu") end)
+            npc:timer(16000, function(npc) npc:setStatus(tpz.status.DISAPPEAR) end)
+
+            local cap = instance:getLevelCap()
+            local area = player:getCurrentAssault()
+
+            if
+                cap == 0 or cap >= tpz.assault.info[area].suggestedLevel
+            then
+                local prizes = iterateCategory(player, npc, loot.SPECIAL, area)
+
+                if #prizes > 0 then
+                    for _, prize in pairs(prize) do
+                        for _, char in ipairs(chars) do
+                            char:messageName(text.PLAYER_OBTAINS_ITEM, player, prize)
+                        end
+                    end
+                end
+            end
+
+            iterateCategory(player, npc, loot.REGULAR)
+        end
+    end
+end
+
+
+local function iterateCategory(player, npc, category, area)
+    local prizes = {}
+
+    for i = 1, #category, 1 do
+        local group = category[i]
+
+        if group then
+            local max = 0
+
+            for _, entry in pairs(group) do
+                max = max + entry.droprate
+            end
+
+            local roll = math.random(max)
+
+            for _, entry in pairs(group) do
+                max = max - entry.droprate
+
+                if roll > max then
+                    if entry.itemid ~= 0 then
+                        if area then
+                            player:addItem({id = entry.itemid, appraisal = area})
+                        else
+                            player:addTreasure(entry.itemid, npc)
+                        end
+
+                        prizes[i] = entry.itemid
+                    end
+
+                    break
+                end
+            end
+        end
+    end
+
+    return prizes
+end

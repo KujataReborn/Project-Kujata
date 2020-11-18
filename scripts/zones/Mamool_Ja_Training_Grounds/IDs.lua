@@ -33,8 +33,20 @@ zones[tpz.zone.MAMOOL_JA_TRAINING_GROUNDS] =
         {
             MOBS_START =
             {
-                17047553, 17047554, 17047556, 17047557, 17047559, 17047560, 17047561, 17047563, 17047564, 17047565, 17047566,
-                GATE_1 = 17047567, GATE_2 = 17047568, GATE_3 = 17047569,
+                17047553, -- Mamool Ja Warder (WHM)
+                17047554, -- Mamool Ja Warder (BST)
+                17047556, -- Mamool Ja Warder (WHM)
+                17047557, -- Mamool Ja Warder (BST)
+                17047559, -- Mamool Ja Warder (WHM)
+                17047560, -- Mamool Ja Warder (WHM)
+                17047561, -- Mamool Ja Warder (BST)
+                17047563, -- Mamool Ja Warder (NIN)
+                17047564, -- Mamool Ja Warder (NIN)
+                17047565, -- Mamool Ja Warder (NIN)
+                17047566, -- Mamool Ja Warder (NIN)
+                17047567, -- Dilapidated Gate #1
+                17047568, -- Dilapidated Gate #2
+                17047569, -- Dilapidated Gate #3
             },
             GATES      =
             {
