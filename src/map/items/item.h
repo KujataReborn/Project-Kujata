@@ -110,6 +110,7 @@ public:
     void        setLocationID(uint8 LocationID);
     void        setSlotID(uint8 SlotID);
     void        setSent(bool sent);
+    void        setAppraisalID(uint8* appID);
 
     const int8* getName();
     void        setName(int8* name);

@@ -79,6 +79,7 @@ public:
     int32 isShield(lua_State*);             // is a Shield
 
     int32 getSignature(lua_State*);
+    int32 getAppraisalID(lua_State*);       // get the appraisal ID
 };
 
 #endif
