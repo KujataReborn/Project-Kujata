@@ -6,6 +6,7 @@
 require("scripts/globals/keyitems")
 require("scripts/globals/missions")
 require("scripts/globals/quests")
+require("scripts/globals/status")
 ---------------------------------------
 tpz = tpz or {}
 tpz.assault = tpz.assault or {}
@@ -72,9 +73,15 @@ tpz.assault.info =
     [tpz.assault.missions.IMPERIAL_AGENT_RESCUE] = {suggestedLevel = 60, minimumPoints = 1100}
 }
 
-tpz.assault.instance =
+tpz.assault.destiny =
 {
-    [tpz.zone.BHAFLAU_THICKETS] = tpz.zone.MAMOOL_JA_TRAINING_GROUNDS
+    [tpz.zone.BHAFLAU_THICKETS] = tpz.zone.MAMOOL_JA_TRAINING_GROUNDS,
+    [tpz.zone.MAMOOL_JA_TRAINING_GROUNDS] = tpz.zone.BHAFLAU_THICKETS,
+}
+
+tpz.assault.firefly =
+{
+    [tpz.zone.MAMOOL_JA_TRAINING_GROUNDS] = 5344, -- Bhaflau Fireflies
 }
 
 -- ------------------------------------------------------------------------------------------------
@@ -210,17 +217,16 @@ tpz.assault.runicSeal.onEventUpdate = function(player, csid, option, target, ord
         end
     end
 
-    player:createInstance(assaultID, tpz.assault.instance[player:getZoneID()])
+    player:createInstance(assaultID, tpz.assault.destiny[player:getZoneID()])
 end
 
 tpz.assault.runicSeal.onEventFinish = function(player, csid, option, assaultCs, assaultOpt)
     if csid == assaultCs and option == assaultOpt then
-        player:setPos(0, 0, 0, 0, tpz.assault.instance[player:getZoneID()])
+        player:setPos(0, 0, 0, 0, tpz.assault.destiny[player:getZoneID()])
     end
 end
 
 tpz.assault.runicSeal.onInstanceCreated = function(player, target, instance, csid)
-    
     if instance then
         instance:setLevelCap(player:getCharVar("AssaultCap"))
         player:setCharVar("AssaultCap", 0)
@@ -249,6 +255,96 @@ tpz.assault.runicSeal.onInstanceCreated = function(player, target, instance, csi
     else
         player:messageText(player, zones[player:getZoneID()].text.CANNOT_ENTER, false)
         player:instanceEntry(target, 3)
+    end
+end
+
+-- ------------------------------------------------------------------------------------------------
+-- Instance
+
+tpz.assault.instance = {}
+
+tpz.assault.instance.afterInstanceRegister = function(player, text, mobs)
+    local instance = player:getInstance()
+
+    for _, mob in pairs(mobs.MOBS_START) do
+        SpawnMob(mob, instance)
+    end
+
+    local assaultID = player:getCurrentAssault()
+    
+    player:messageSpecial(text.ASSAULT_START_OFFSET + assaultID, assaultID)
+    player:messageSpecial(text.TIME_TO_COMPLETE, instance:getTimeLimit())
+    player:addTempItem(tpz.assault.firefly[assaultID])
+
+    if player:getCharVar("Assault_Armband") == 1 then
+        local cap = instance:getLevelCap()
+
+        if cap ~= 0 then
+            if     cap == 70 then cap = 5
+            elseif cap == 60 then cap = 15
+            elseif cap == 50 then cap = 25
+            end
+
+            for _, mob in pairs(mobs) do
+                local entity = instance:getEntity(bit.band(mob, 0xFFF), tpz.objType.MOB)
+
+                entity:setMobLevel(entity:getMainLvl() - cap)
+            end
+        end
+    end
+end
+
+tpz.assault.instance.onInstanceCreated = function(instance, npcs)
+    if npcs then
+        for id, npc in pairs(npcs)
+            local entity = instance:getEntity(bit.band(id, 0xFFF), tpz.objType.NPC)
+
+            entity:setPos(npc.x, npc.y, npc.z, npc.rot)
+        end
+    end
+end
+
+tpz.assault.instance.onInstanceFailure = function(instance, csid, text)
+    local mobs = instance:getMobs()
+
+    for _,v in pairs(mobs) do
+        local mobID = v:getID()
+
+        DespawnMob(mobID, instance)
+    end
+    
+    local chars = instance:getChars()
+
+    for _, char in pairs(chars) do
+        char:messageSpecial(text.MISSION_FAILED, 10, 10)
+        chars:startEvent(csid)
+    end
+end
+
+tpz.assault.instance.onInstanceComplete = function(instance, X, Z, text, npcs)
+    local chars = instance:getChars()
+
+    for _, char in pairs(chars) do
+        char:messageSpecial(text.RUNE_UNLOCKED_POS, X, Z)
+    end
+
+    if npcs then
+        for id, npc in pairs(npcs)
+            local entity = instance:getEntity(bit.band(id, 0xFFF), tpz.objType.NPC)
+
+            entity:setStatus(tpz.status.NORMAL)
+        end
+    end
+end
+
+tpz.assault.instance.onEventFinish = function(player, csid, finishCs, zone)
+    if csid == finishCs then
+        local instance = player:getInstance()
+        local chars = instance:getChars()
+
+        for _, char in pairs(chars) do
+            char:setPos(0, 0, 0, 0, tpz.assault.destiny[char:getZoneID()])
+        end
     end
 end
 
