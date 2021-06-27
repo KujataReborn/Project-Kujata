@@ -851,7 +851,8 @@ int32 map_cleanup(time_point tick, CTaskMgr::CTask* PTask)
 
         CCharEntity* PChar = map_session_data->PChar;
 
-        if ((time(nullptr) - map_session_data->last_update) > 5)
+        time_t now = time(nullptr);
+        if ((now - map_session_data->last_update) > 5)
         {
             if (PChar != nullptr && !(PChar->nameflags.flags & FLAG_DC))
             {
@@ -863,7 +864,7 @@ int32 map_cleanup(time_point tick, CTaskMgr::CTask* PTask)
                     PChar->loc.zone->SpawnPCs(PChar);
                 }
             }
-            if ((time(nullptr) - map_session_data->last_update) > map_config.max_time_lastupdate)
+            if ((now - map_session_data->last_update) > map_config.max_time_lastupdate)
             {
                 if (PChar != nullptr)
                 {
@@ -941,6 +942,13 @@ int32 map_cleanup(time_point tick, CTaskMgr::CTask* PTask)
                 PChar->loc.zone->SpawnPCs(PChar);
             }
             charutils::SaveCharStats(PChar);
+        }
+        // recent update and not FLAG_DC
+        else if (PChar != nullptr && (now - PChar->GetLocalVar("ZoneInTime") < 11)) {
+            // this is to fix the bug of a player spawn packet getting lost when zoning
+            // for a few seconds after you zone, it forces a few spawn packets
+            // ShowDebug("ZoneInTime: " + std::to_string(PChar->GetLocalVar("ZoneInTime")) + "  - now: " + std::to_string(now) + "\n");
+            PChar->loc.zone->SpawnPCs(PChar, true);
         }
         ++it;
     }
