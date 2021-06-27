@@ -45,6 +45,8 @@
 #include "../utils/petutils.h"
 #include "../utils/puppetutils.h"
 #include "../weapon_skill.h"
+#include "../entities/mobentity.h"
+#include "../enmity_container.h"
 
 CBattleEntity::CBattleEntity()
 {
@@ -524,6 +526,20 @@ int32 CBattleEntity::addHP(int32 hp)
     if (health.hp == 0 && m_unkillable)
     {
         health.hp = 1;
+    }
+
+    // if dead mob, autotarget
+    if (health.hp == 0 && objtype == TYPE_MOB) {
+        auto PTargetList = (static_cast<CMobEntity*>(this))->PEnmityContainer->GetEnmityList();
+        for (const auto& Element : *PTargetList)
+        {
+            auto PEntity = Element.second.PEnmityOwner;
+            // ShowDebug("trying autotarget PEnt->Bat: %d  this: %d \n", (int)PEntity->GetBattleTarget(), (int)this);
+            if (PEntity->objtype == TYPE_PC && PEntity->GetBattleTarget() == this)
+            {
+                static_cast<CCharEntity*>(PEntity)->AutoTarget();
+            }
+        }
     }
 
     return abs(hp);
