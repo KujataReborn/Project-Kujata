@@ -249,11 +249,11 @@ void CZoneInstance::SpawnNPCs(CCharEntity* PChar)
     }
 }
 
-void CZoneInstance::SpawnPCs(CCharEntity* PChar)
+void CZoneInstance::SpawnPCs(CCharEntity* PChar, bool force)
 {
     if (PChar->PInstance)
     {
-        PChar->PInstance->SpawnPCs(PChar);
+        PChar->PInstance->SpawnPCs(PChar, force);
     }
 }
 

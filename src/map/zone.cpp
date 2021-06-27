@@ -681,9 +681,9 @@ void CZone::SpawnNPCs(CCharEntity* PChar)
 *                                                                       *
 ************************************************************************/
 
-void CZone::SpawnPCs(CCharEntity* PChar)
+void CZone::SpawnPCs(CCharEntity* PChar, bool force)
 {
-    m_zoneEntities->SpawnPCs(PChar);
+    m_zoneEntities->SpawnPCs(PChar, force);
 }
 
 /************************************************************************

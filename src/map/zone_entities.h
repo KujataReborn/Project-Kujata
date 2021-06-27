@@ -34,7 +34,7 @@ public:
     CCharEntity*	GetCharByID(uint32 id);
     CBaseEntity*	GetEntity(uint16 targid, uint8 filter = -1); 					// получаем указатель на любую сущность в зоне
 
-    void			SpawnPCs(CCharEntity* PChar);									// отображаем персонажей в зоне
+    void			SpawnPCs(CCharEntity* PChar, bool force=false);					// отображаем персонажей в зоне
     void			SpawnMOBs(CCharEntity* PChar);									// отображаем MOBs в зоне
     void			SpawnPETs(CCharEntity* PChar);									// отображаем PETs в зоне
     void			SpawnNPCs(CCharEntity* PChar);									// отображаем NPCs в зоне

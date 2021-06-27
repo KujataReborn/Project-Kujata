@@ -494,7 +494,7 @@ void CZoneEntities::SpawnNPCs(CCharEntity* PChar)
     }
 }
 
-void CZoneEntities::SpawnPCs(CCharEntity* PChar)
+void CZoneEntities::SpawnPCs(CCharEntity* PChar, bool force)
 {
     TracyZoneScoped;
     for (EntityList_t::const_iterator it = m_charList.begin(); it != m_charList.end(); ++it)
@@ -506,7 +506,7 @@ void CZoneEntities::SpawnPCs(CCharEntity* PChar)
         {
             if (distance(PChar->loc.p, PCurrentChar->loc.p) < 50 && PChar->m_moghouseID == PCurrentChar->m_moghouseID)
             {
-                if (PC == PChar->SpawnPCList.end())
+                if (force || (PC == PChar->SpawnPCList.end()))
                 {
                     if (PCurrentChar->m_isGMHidden == false)
                     {
