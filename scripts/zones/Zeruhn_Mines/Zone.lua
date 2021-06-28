@@ -29,6 +29,10 @@ function onZoneIn(player, prevZone)
             if not player:hasItem(16607) then
                 cs = 131
             end
+        else
+            print("Zeruhn Mines workaround until we figure out how to work cutscene 150")
+            player:setPos(-73, 0, 60)
+            return -1
         end
     elseif player:getXPos() == 0 and player:getYPos() == 0 and player:getZPos() == 0 then
         player:setPos(-270.707, 14.159, -20.268, 0)
@@ -45,6 +49,10 @@ function onRegionEnter(player, region)
 end
 
 function onEventUpdate(player, csid, option)
+    if csid == 150 then
+        print("Zeruhn_Mines onEventUpdate csid: " .. csid)
+        -- I think this is where we need to send a packet to open gate, or something.
+    end
 end
 
 function onEventFinish(player, csid, option)

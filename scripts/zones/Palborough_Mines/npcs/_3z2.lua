@@ -1,13 +1,17 @@
 -----------------------------------
 -- Area: Palborough Mines
---  NPC: Old Toolbox
--- Continues Quest: The Eleventh's Hour (100%)
+--  NPC: Dock Lever
+-- zone to Zeruhn Mines
 -----------------------------------
 
 function onTrade(player, npc, trade)
 end
 
 function onTrigger(player, npc)
+    -- TODO: confirm this is the correct cutscene
+    -- cutscene should show boat going down the river
+    -- (it's not correct in the client versions that I have
+    -- it might be correct in some other version)
     player:startEvent(14)
 end
 
