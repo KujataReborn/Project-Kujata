@@ -1877,15 +1877,22 @@ inline int32 CLuaBaseEntity::wait(lua_State* L)
 {
     TPZ_DEBUG_BREAK_IF(m_PBaseEntity->objtype == TYPE_PC);
 
-    CBattleEntity* PBattle = (CBattleEntity*)m_PBaseEntity;
-
-    int32 waitTime = 4000;
-
-    if (lua_isnumber(L, 1))
+    // ShowDebug("wait entity: " + std::to_string(m_PBaseEntity->objtype) + "\n");
+    if (m_PBaseEntity->objtype & (TYPE_MOB | TYPE_PET | TYPE_TRUST))
     {
-        waitTime = (int32)lua_tonumber(L, 1);
+        CBattleEntity* PBattle = (CBattleEntity*)m_PBaseEntity;
+
+        int32 waitTime = 4000;
+
+        if (lua_isnumber(L, 1))
+        {
+            waitTime = (int32)lua_tonumber(L, 1);
+        }
+        PBattle->PAI->Inactive(std::chrono::milliseconds(waitTime), true);
     }
-    PBattle->PAI->Inactive(std::chrono::milliseconds(waitTime), true);
+    else {
+        ShowDebug("CLuaBaseEntity::wait called on something that isn't programmed to wait\n");
+    }
 
     return 0;
 }
