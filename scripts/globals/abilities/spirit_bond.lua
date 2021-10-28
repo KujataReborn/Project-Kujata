@@ -14,5 +14,5 @@ function onAbilityCheck(player, target, ability)
 end
 
 function onUseAbility(player, target, ability)
-    player:addStatusEffect(tpz.effect.SPIRIT_BOND, 14, 0, 60)
+    -- player:addStatusEffect(tpz.effect.SPIRIT_BOND, 14, 0, 60) -- TODO: implement tpz.effect.SPIRIT_BOND
 end

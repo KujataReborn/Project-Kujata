@@ -773,6 +773,8 @@ tpz.effect =
     MAGIC_EVASION_BOOST_II   = 611,
     COLURE_ACTIVE            = 612,
 
+    SPIRIT_BOND              = 619,
+
     RAMPART                  = 623,
     -- Effect icons in packet can go from 0-767, so no custom effects should go in that range.
 
